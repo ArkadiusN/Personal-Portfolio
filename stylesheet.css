@@ -384,7 +384,10 @@ hr {
 }
 
 .project-link {
+  background: linear-gradient(45deg, transparent 8%, #f45905 5%);
+  box-shadow: 6px 0px 0px #000000;
+  padding: 10px;
   font-size: 15px;
   text-decoration: none;
-  color: #f45905;
+  color: #000000;
 }
