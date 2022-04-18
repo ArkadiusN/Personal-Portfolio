@@ -44,60 +44,50 @@ body {
   color: #dc2f2f;
   position: fixed;
   min-width: 100%;
-  padding: 0 20px;
+  padding: 0 1.25em;
   top: 20px;
   z-index: 999;
 }
 
 .cornerName {
   text-transform: uppercase;
-  text-align: left;
   font-family: "Montserrat", sans-serif;
-  /* color: white; */
   font-weight: 800;
   font-size: 14px;
   letter-spacing: -0.06em;
 }
 
 .belowDescription {
-  margin-top: 5px;
-  text-align: left;
+  margin-top: 0.3125em;
   font-family: "Montserrat", sans-serif;
-  /* color: white; */
   font-weight: 700;
   font-size: 12px;
 }
 
 .navbar {
-  position: absolute;
-  top: 54px;
   margin-top: 24px;
-  min-height: 7rem;
-  /*Use this color afterwards #2b4353*/
-  display: flex;
+  display: flex; /*Use this color afterwards #2b4353*/
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
 }
 
 .logo {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 3.4em;
   color: #f45905;
-  letter-spacing: -0.24em;
-  margin-right: 0.24em;
+  letter-spacing: -0.22em;
+  margin-right: 0.22em;
 }
 
 .about,
 .projects {
   font-family: "Epilogue", sans-serif;
-  padding: 0 0.5rem 0 0.5rem;
   font-weight: 600;
   font-size: 1.4em;
   color: #ffaf4f;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
 }
 
 /* ------------------SECTIONS------------------ */
@@ -115,7 +105,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
 
   /* scroll-padding: 50px 0 0 0;
   scroll-snap-align: start; */
@@ -123,11 +112,9 @@ main {
 
 .upperSection {
   background-color: #222831;
-  justify-content: flex-end;
 }
 
 .middleSection {
-  justify-content: center;
   background-color: #2d4059;
 }
 
@@ -140,11 +127,8 @@ main {
 /* ------------------FLEX BOXES------------------ */
 .flexbox-item {
   background-color: #202022;
-  /* filter: drop-shadow(5px 5px 5px black); */
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  filter: drop-shadow(5px 5px 5px black);
   margin: 5rem 2.5rem 5rem 2.5rem;
-  /* border: 3px solid #ff0000; */
-  /* background: linear-gradient(to right bottom, #202022 50%, #212531 50%); */
 }
 
 .flexbox-item0 {
@@ -152,46 +136,32 @@ main {
 }
 
 .text {
-  /* Display stuff */
   display: flex;
 }
 
 .main-text {
-  /* Box mode stuff */
-  color: #000000;
   background-color: #f45905;
-
-  /* Typography */
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   writing-mode: vertical-lr;
   letter-spacing: -1.6px;
   padding: 0.5em 0 0.5em 0;
-  font-size: 35px;
+  font-size: 38px;
   text-align: center;
-
-  /* Manipulation */
   transform: rotate(180deg);
 }
 
 .introduction {
-  /* Display stuff */
   display: flex;
-  justify-content: center;
   align-content: center;
   align-items: center;
-
-  /* Box model stuff */
   margin: 0;
-  padding: 2em 1em 2em 1em;
-
-  /* Typography */
+  padding: 1.5em 1em 1.5em 1em;
   color: white;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.2px;
-  /* letter-spacing: -2.5px; */
   line-height: 2.5rem;
   text-align: center;
 }
@@ -209,7 +179,6 @@ main {
 
 .top,
 .bottom {
-  flex-basis: 100%; /* to force .bottom to wrap */
   display: flex;
   justify-content: space-between;
 }
@@ -237,22 +206,24 @@ main {
 }
 
 .middleHeader {
-  color: #ff0400; /*white*/
+  color: #ff0400;
   font-family: "Epilogue", sans-serif;
   font-size: 30px; /*35*/
   font-weight: 600;
   letter-spacing: 1.2px;
   line-height: 2.5rem;
   text-align: center;
-  padding: 54px 40px 0 40px;
+  padding: 3.375rem 2.5rem 0 2.5rem;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Work on this code since there is "hr" tag defined already with code */
+/* Check the code on the below section upper sections were checked and improved  */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .underHeader {
   margin-left: 30px;
   margin-right: 30px;
-  display: block;
   height: 1px;
-  border-top: 1px solid #ff0400; /* #f45905 */
   display: block;
   border: 0;
   border-top: 1px solid #ff0400; /* #f45905 */
