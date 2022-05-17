@@ -5,6 +5,19 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --red: #dc2f2f;
+  --bright-red: #ff0400;
+  --dark-orange: #f45905;
+  --orange: #ff5722;
+  --light-orange: #ffaf4f;
+  --dark-purple: #222831;
+  --navy: #2d4059;
+  --charcoal: #202022;
+  --black: #000000;
+  --white: #ffffff;
+}
+
 *,
 *:before,
 *:after {
@@ -41,7 +54,7 @@ body {
 
 /* ------------------NAVBAR------------------ */
 .header {
-  color: #dc2f2f;
+  color: var(--red);
   position: fixed;
   min-width: 100%;
   padding: 0 1.25em;
@@ -76,7 +89,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 54.4px;
-  color: #f45905;
+  color: var(--dark-orange);
   letter-spacing: -0.22em;
   margin-right: 0.22em;
 }
@@ -86,7 +99,7 @@ body {
   font-family: "Epilogue", sans-serif;
   font-weight: 600;
   font-size: 22.4px;
-  color: #ffaf4f;
+  color: var(--light-orange);
   letter-spacing: -0.04em;
 }
 
@@ -111,23 +124,23 @@ main {
 }
 
 .upperSection {
-  background-color: #222831;
+  background-color: var(--dark-purple);
 }
 
 .middleSection {
-  background-color: #2d4059;
+  background-color: var(--navy);
 }
 
 .bottomSection {
   min-height: 320vh;
   justify-content: flex-start;
-  background-color: #ff5722;
+  background-color: var(--orange);
 }
 
 /* ------------------FLEX BOXES------------------ */
 .flexbox-item {
-  background-color: #202022;
-  filter: drop-shadow(5px 5px 5px black);
+  background-color: var(--charcoal);
+  filter: drop-shadow(5px 5px 5px var(--black));
   margin: 5rem 2.5rem 5rem 2.5rem;
 }
 
@@ -140,7 +153,7 @@ main {
 }
 
 .main-text {
-  background-color: #f45905;
+  background-color: var(--dark-orange);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   writing-mode: vertical-lr;
@@ -156,7 +169,7 @@ main {
   align-content: center;
   align-items: center;
   padding: 1.5em 1em 1.5em 1em;
-  color: white;
+  color: var(--white);
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -167,7 +180,7 @@ main {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .flexbox-itemMiddle {
-  background-color: #202022;
+  background-color: var(--charcoal);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 3rem 1.5rem 3rem 1.5rem;
 }
@@ -185,7 +198,7 @@ main {
 .corner {
   width: 10px;
   height: 10px;
-  background: #ff0400; /* #f45905 */
+  background: var(--bright-red);
 }
 
 .one {
@@ -205,7 +218,7 @@ main {
 }
 
 .middleHeader {
-  color: #ff0400;
+  color: var(--bright-red);
   font-family: "Epilogue", sans-serif;
   font-size: 30px; /*35*/
   font-weight: 600;
@@ -218,11 +231,11 @@ main {
 .underHeader {
   margin-left: 1.875rem;
   margin-right: 1.875rem;
-  border-top: 1px solid #ff0400; /* #f45905 */
+  border-top: 1px solid var(--bright-red);
 }
 
 .details {
-  color: white;
+  color: var(--white);
   font-family: "Montserrat", sans-serif;
   font-size: 14px; /*16*/
   font-weight: 500;
@@ -277,7 +290,7 @@ main {
   width: 135px;
   height: 135px;
   border-radius: 50%;
-  border: 2px solid #ff0400; /* #f45905 */
+  border: 2px solid var(--bright-red); /* #f45905 */
 }
 
 .headshot {
@@ -291,7 +304,7 @@ main {
 /* _______________________________________________________ */
 
 .flexbox-itemBottom {
-  background-color: #202022;
+  background-color: var(--charcoal);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 1.5rem 1.5rem 1.5rem 1.5rem;
   max-width: 18rem;
@@ -325,7 +338,7 @@ main {
 }
 
 .project-numeration {
-  color: white;
+  color: var(--white);
   font-family: "Epilogue", sans-serif;
   font-size: 20px; /*35*/
   letter-spacing: 0.075rem;
@@ -344,14 +357,13 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #f45905;
   padding: 0;
 }
 
 .sub-text {
   padding: 2em 3.5em 0em 3.5em;
   text-align: center;
-  color: white;
+  color: var(--white);
   font-size: 12px;
   font-family: "Epilogue", sans-serif;
   letter-spacing: 0.075rem;
@@ -366,11 +378,11 @@ hr {
 }
 
 .project-link {
-  background: linear-gradient(45deg, transparent 8%, #f45905 5%);
-  box-shadow: 6px 0px 0px #000000;
+  background: linear-gradient(45deg, transparent 8%, var(--dark-orange) 5%);
+  box-shadow: 6px 0px 0px var(--black);
   padding: 0.625rem;
   font-size: 15px;
-  color: #000000;
+  color: var(--black);
 }
 
 .footer {
@@ -378,7 +390,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #222831;
+  background-color: var(--dark-purple);
   align-items: center;
 }
 
@@ -386,7 +398,8 @@ hr {
 .footer-link {
   text-align: center;
   font-size: 14px;
-  color: white;
+  color: var(--white);
+  transition: color 0.5s linear;
   padding: 0.375rem;
   width: 220px;
 }
@@ -403,19 +416,40 @@ hr {
 
 .scrollTop {
   position: fixed;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #ff0400;
+  background-color: var(--bright-red);
+  right: 10px;
+  bottom: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  pointer-events: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  visibility: 0;
+  overflow: hidden;
+  transition: visibility 0.5s, opacity 1s linear;
+}
+
+.scrollTopTwo {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bright-red);
   right: 10px;
   bottom: 10px;
   outline: none;
   border: none;
   cursor: pointer;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  /* opacity: 0; */
+  opacity: 1;
+  visibility: 1;
+  transition: visibility 0.2s, opacity 0.7s linear;
 }
 
 .material-icons {
-  color: white;
+  color: var(--white);
 }
