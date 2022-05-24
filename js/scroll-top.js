@@ -1,4 +1,4 @@
-var element = document.querySelector(".scrollTop");
+var element = document.querySelector(".scroll-top");
 function clickedButton() {
   window.scrollTo({
     top: 0,
@@ -8,11 +8,11 @@ function clickedButton() {
 }
 
 function changeColor() {
-  element.className = "scrollTopTwo";
+  element.className = "scroll-top-after";
 }
 
 function returnColor() {
-  element.className = "scrollTop";
+  element.className = "scroll-top";
 }
 
 window.addEventListener("scroll", (e) => {

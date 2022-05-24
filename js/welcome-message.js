@@ -1,5 +1,5 @@
 (function () {
-  var elMessage = document.getElementById("welcomeMessage");
+  var elMessage = document.getElementById("welcome-message");
   var today = new Date();
   var hourNow = today.getHours();
   var minuteNow = today.getMinutes();

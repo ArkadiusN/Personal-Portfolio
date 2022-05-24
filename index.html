@@ -34,43 +34,35 @@
   </head>
   <body>
     <main>
-      <section class="section upperSection">
-        <div class="switch-container">
-          <label class="switch">
-            <input class="checkbox" type="checkbox" />
-            <span class="slider"></span>
-          </label>
-        </div>
-
-        <div class="header">
-          <h1 class="cornerName">Arkadiusz Nowacki</h1>
-          <h2 class="belowDescription">Java Dev & Web passionate</h2>
-        </div>
+      <header class="header">
+        <a class="header__logo" href="/">AN</a>
         <nav class="navbar">
-          <a class="nav-link logo">AN</a>
-          <a href="#about" class="nav-link about">About me</a>
-          <a href="#projects" class="nav-link projects">Projects</a>
+          <a class="navbar__link" href="#about">About me</a>
+          <a class="navbar__link" href="#projects">Projects</a>
         </nav>
-        <header></header>
+      </header>
 
-        <div class="flexbox-item flexbox-item0">
-          <div class="text">
-            <h1 class="main-text" id="welcomeMessage"></h1>
-            <p class="introduction">Let's dive into my previous work.</p>
-          </div>
+      <section class="section section--top">
+        <label class="switch">
+          <input class="switch__checkbox" type="checkbox" />
+          <span class="switch__slider"></span>
+        </label>
+
+        <div class="message">
+          <h1 class="message__welcome" id="welcome-message"></h1>
+          <p class="message__invite">Let's dive into my previous work.</p>
         </div>
-        <!-- <div class="flexbox-item flexbox-item1"></div>
-        <div class="flexbox-item flexbox-item2"></div> -->
       </section>
 
-      <section class="section middleSection" id="about">
-        <div class="flexbox-itemMiddle flexbox-itemMiddle0">
+      <section class="section section--mid" id="about">
+        <div class="flexbox flexbox--mid">
           <div class="top">
-            <div class="corner one"></div>
-            <div class="corner two"></div>
+            <div class="corner corner--one"></div>
+            <div class="corner corner--two"></div>
           </div>
-          <h1 class="middleHeader">About me</h1>
-          <hr class="underHeader" />
+
+          <h1 class="header-mid">About me</h1>
+          <hr class="underline" />
           <div class="headshot-container">
             <div class="headshot-outline">
               <img class="headshot" src="img/ColorManImg.png" />
@@ -85,39 +77,37 @@
             <span class="city">London&#x1F306;</span> and looking forward to
             pursuing my career there.
           </p>
+
           <div class="bottom">
-            <div class="corner three"></div>
-            <div class="corner four"></div>
+            <div class="corner corner--three"></div>
+            <div class="corner corner--four"></div>
           </div>
         </div>
       </section>
 
-      <section class="section bottomSection" id="projects">
-        <div class="header">
-          <h1 class="cornerName">Arkadiusz Nowacki</h1>
-          <h2 class="belowDescription">Java Dev & Web passionate</h2>
+      <section class="section section--bot" id="projects">
+        <div class="signature">
+          <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
+          <h2 class="signature__title">Java Dev & Web passionate</h2>
         </div>
-
-        <!--  -->
         <h2 class="project-title">Projects</h2>
-        <div class="flexbox-itemBottom flexbox-itemBottom0">
-          <div class="container">
+
+        <div class="flexbox flexbox--bot">
+          <div class="project">
             <img
-              class="project-image image1"
+              class="project__image image__one"
               src="img/projectOneImg.PNG"
-              alt="Project one image"
+              alt="Platform game image"
             />
           </div>
-          <!-- <h3 class="project-numeration">Project One</h3> -->
-          <hr />
-          <p class="sub-text">
+          <p class="flexbox__description">
             Platform theme game that would suit itself inside of most browsers
             by utilizing <span class="javascript">JavaScript</span> and
             <span class="html">HTML</span>. In addition, the
             <span class="p5">p5.js</span> library has been used for the
             advantage of this project.
           </p>
-          <p class="sub-textTwo">
+          <p class="flexbox__button">
             <a
               class="project-link"
               href="https://github.com/ArkadiusN/Platform-Game"
@@ -125,23 +115,21 @@
             >
           </p>
         </div>
-        <!--  -->
-        <div class="flexbox-itemBottom flexbox-itemBottom1">
-          <div class="container">
+
+        <div class="flexbox flexbox--bot">
+          <div class="project">
             <img
-              class="project-image image2"
+              class="project__image image__two"
               src="img/projectTwoImg.PNG"
-              alt="Project two image"
+              alt="Drawing app image"
             />
           </div>
-          <!-- <h3 class="project-numeration">Project Two</h3> -->
-          <hr />
-          <p class="sub-text">
+          <p class="flexbox__description">
             Painting app called "<span class="app-title">N&B drawing</span>"
             that allows user to use a painting tool in their browser. It allows
             user to various options and save their art.
           </p>
-          <p class="sub-textTwo">
+          <p class="flexbox__button">
             <a
               class="project-link"
               href="https://github.com/ArkadiusN/Painting-app"
@@ -150,45 +138,41 @@
           </p>
         </div>
 
-        <div class="flexbox-itemBottom flexbox-itemBottom2">
-          <div class="container">
+        <div class="flexbox flexbox--bot">
+          <div class="project">
             <img
-              class="project-image image3"
+              class="project__image image__three"
               src="img/toDoApp.PNG"
-              alt="Project three image"
+              alt="Remainder todo app image"
             />
           </div>
-          <!-- <h3 class="project-numeration">Project Three</h3> -->
-          <hr />
-          <p class="sub-text">
+          <p class="flexbox__description">
             Todo application made with utilization of
             <span class="java">Java</span> and its library called
             <span class="swing"> Java Swing</span>.
           </p>
-          <p class="sub-textTwo">
+          <p class="flexbox__button">
             <a class="project-link" href="https://github.com/ArkadiusN/ToDo-App"
               >View here</a
             >
           </p>
         </div>
 
-        <div class="flexbox-itemBottom flexbox-itemBottom3">
-          <div class="container">
+        <div class="flexbox flexbox--bot">
+          <div class="project">
             <img
-              class="project-image image4"
+              class="project__image image__four"
               src="img/flightBookingSystem.PNG"
-              alt="Project four image"
+              alt="Low-level booking system image"
             />
           </div>
-          <!-- <h3 class="project-numeration">Project Four</h3> -->
-          <hr />
-          <p class="sub-text">
+          <p class="flexbox__description">
             A flight booking system that reads the lists of passengers and
             decides upon how to allocate them to seats. Accordingly, it checks
             whether other criteria were met such as aircraft weight after
             boarding.
           </p>
-          <p class="sub-textTwo">
+          <p class="flexbox__button">
             <a
               class="project-link"
               href="https://github.com/ArkadiusN/Flight-booking-system"
@@ -196,19 +180,16 @@
             >
           </p>
         </div>
-
-        <!--  -->
-
-        <!--  -->
       </section>
+
       <div class="footer">
-        <p id="footer-text" class="footer-text"></p>
-        <a class="footer-link" href="https://github.com/ArkadiusN"
+        <p class="footer__text" id="footer-text"></p>
+        <a class="footer__link" href="https://github.com/ArkadiusN"
           ><i class="fa">&#xf09b;</i>My GitHub</a
         >
       </div>
 
-      <button class="scrollTop">
+      <button class="scroll-top">
         <i class="material-icons">arrow_upward</i>
       </button>
     </main>
