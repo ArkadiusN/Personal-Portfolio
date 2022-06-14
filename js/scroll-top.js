@@ -1,4 +1,7 @@
 var element = document.querySelector(".scroll-top");
+var sectionHeight = document.getElementById("about").offsetHeight;
+
+console.log("Section height:" + sectionHeight);
 function clickedButton() {
   window.scrollTo({
     top: 0,
@@ -17,9 +20,9 @@ function returnColor() {
 
 window.addEventListener("scroll", (e) => {
   const scrolled = window.scrollY;
-  if (scrolled > 710) {
+  if (scrolled > sectionHeight) {
     changeColor();
-  } else if (scrolled <= 710) {
+  } else if (scrolled <= sectionHeight) {
     returnColor();
   }
 });

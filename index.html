@@ -35,22 +35,55 @@
   <body>
     <main>
       <header class="header">
-        <a class="header__logo" href="/">AN</a>
+        <img class="header__logo" src="img/logo2.svg" />
         <nav class="navbar">
-          <a class="navbar__link" href="#about">About me</a>
-          <a class="navbar__link" href="#projects">Projects</a>
+          <ul class="nav__links">
+            <li>
+              <a class="link__about-me" href="#about">About</a>
+            </li>
+            <li>
+              <a class="link__project" href="#projects">Projects</a>
+            </li>
+          </ul>
         </nav>
+        <a>
+          <label class="switch">
+            <input class="switch__checkbox" type="checkbox" />
+            <span class="switch__slider"></span> </label
+        ></a>
+        <!-- <a class="navbar__link link__about-me" href="#about">AN</a> -->
+        <!-- <nav class="navbar">
+          <a class="navbar__link link__about-me" href="#about">About me</a>
+          <a class="navbar__link link__project" href="#projects">Projects</a>
+          <a class="navbar__link">Contact</a>
+          <label class="switch">
+            <input class="switch__checkbox" type="checkbox" />
+            <span class="switch__slider"></span>
+          </label>
+        </nav> -->
+
+        <!-- <div class="header-section"> -->
+        <!-- <a class="navbar__link link__about-me" href="#about">AN</a> -->
+        <!-- </div> -->
       </header>
 
       <section class="section section--top">
-        <label class="switch">
+        <!-- <label class="switch">
           <input class="switch__checkbox" type="checkbox" />
           <span class="switch__slider"></span>
-        </label>
+        </label> -->
 
         <div class="message">
           <h1 class="message__welcome" id="welcome-message"></h1>
-          <p class="message__invite">Let's dive into my previous work.</p>
+          <p class="message__invite">Let's dive into my work.</p>
+        </div>
+
+        <div class="background">
+          <img class="background__image" src="img/ColorManImg.png" />
+        </div>
+
+        <div class="box">
+          <p class="arrow">&#8595;</p>
         </div>
       </section>
 
@@ -86,10 +119,10 @@
       </section>
 
       <section class="section section--bot" id="projects">
-        <div class="signature">
+        <!-- <div class="signature">
           <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
           <h2 class="signature__title">Java Dev & Web passionate</h2>
-        </div>
+        </div> -->
         <h2 class="project-title">Projects</h2>
 
         <div class="flexbox flexbox--bot">
@@ -126,8 +159,8 @@
           </div>
           <p class="flexbox__description">
             Painting app called "<span class="app-title">N&B drawing</span>"
-            that allows user to use a painting tool in their browser. It allows
-            user to various options and save their art.
+            that allows its users to make an art in a browser. Range of drawing
+            options and ability to save them.
           </p>
           <p class="flexbox__button">
             <a
@@ -169,7 +202,7 @@
           <p class="flexbox__description">
             A flight booking system that reads the lists of passengers and
             decides upon how to allocate them to seats. Accordingly, it checks
-            whether other criteria were met such as aircraft weight after
+            whether other criteria were met such as the aircraft weight after
             boarding.
           </p>
           <p class="flexbox__button">
