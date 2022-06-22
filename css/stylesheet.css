@@ -210,6 +210,28 @@ body {
   letter-spacing: 0.05em;
 }
 
+.sub-title {
+  color: black;
+  font-weight: 400;
+  font-family: var(--ff-sub);
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.title-two {
+  color: white;
+  border-color: white;
+}
+
+.title-three {
+  color: white;
+  border-color: white;
+  margin-bottom: 3rem;
+}
+
 /* .box {
   display: flex;
   flex-direction: column;
@@ -296,7 +318,7 @@ main {
 /* ------------------FLEX BOXES------------------ */
 .message {
   display: flex;
-  max-width: 25rem;
+  max-width: 45rem;
   filter: drop-shadow(2px 2px 5px var(--black));
   margin: 5rem 2.5rem 5rem 2.5rem;
 }
@@ -322,7 +344,7 @@ main {
   color: var(--white);
   display: flex;
   font-family: var(--ff-main);
-  font-size: var(--fs-4);
+  font-size: calc(45px + 1.5vw);
   font-weight: var(--fw-b);
   letter-spacing: 0.055rem;
   line-height: 3.2rem;
@@ -380,7 +402,7 @@ main {
 .header-mid {
   color: #ff4f00;
   font-family: var(--ff-sub);
-  font-size: 38px;
+  font-size: calc(32px + 1.5vw);
   font-weight: var(--fw-sb);
   letter-spacing: 0.075rem;
   padding: 3.375rem 2.5rem 0 2.5rem;
@@ -476,7 +498,7 @@ hr {
 .project-title {
   font-family: var(--ff-sub);
   color: var(--white);
-  font-size: 38px;
+  font-size: calc(32px + 1.5vw);
   font-weight: var(--fw-sb);
   letter-spacing: 0.075rem;
   padding-top: 3rem;
@@ -627,7 +649,7 @@ hr {
     padding-left: 2rem;
     color: var(--white);
     font-family: var(--ff-sub);
-    font-size: 22px;
+    font-size: 18px;
     /* font-weight: var(--fw-sb); */
     letter-spacing: -0.04em;
   }
@@ -687,7 +709,7 @@ hr {
   }
 
   .message__invite {
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: 0.075rem;
     line-height: 5rem;
     padding-top: 7rem;
