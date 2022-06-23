@@ -108,6 +108,7 @@ body {
   /* border-bottom: 5px solid #ff4f00;
   border-top: 5px solid #ff4f00; */
   font-family: Inter, sans-serif;
+  background-color: orange;
 }
 
 /* ------------------NAVBAR------------------ */
@@ -209,27 +210,45 @@ body {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
-
+/* 
 .sub-title {
+  margin-bottom: 20px;
+  margin-top: 0px;
   color: black;
   font-weight: 400;
   font-family: var(--ff-sub);
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
+} */
+
+.sub-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 2rem;
+}
+
+.sub-title__phrase {
+  line-height: 28px;
+  color: black;
+  font-weight: 400;
+  font-family: var(--ff-sub);
+  font-size: 20px;
+  padding-right: 13px;
+  padding-left: 13px;
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
 
-.title-two {
+.sub-title__two {
   color: white;
   border-color: white;
 }
 
-.title-three {
+.sub-title__three {
   color: white;
   border-color: white;
-  margin-bottom: 3rem;
 }
 
 /* .box {
@@ -289,13 +308,16 @@ main {
 }
 
 .section {
+  min-height: 100vh;
+
+  /* scroll-snap-align: start; */
+}
+
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-
-  /* scroll-snap-align: start; */
 }
 
 .section--top {
@@ -366,7 +388,7 @@ main {
 
 .flexbox--mid {
   max-width: 31.25rem;
-  margin: 3rem 1.5rem 3rem 1.5rem;
+  margin: 3rem 1.5rem 5rem 1.5rem;
 }
 
 .top,
@@ -493,6 +515,10 @@ hr {
 .flexbox--bot {
   margin: 0 1.5rem 3rem 1.5rem;
   max-width: 18rem;
+}
+
+.flexbox--bot--last {
+  margin-bottom: 5rem;
 }
 
 .project-title {

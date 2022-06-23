@@ -72,154 +72,168 @@
       </header>
 
       <section class="section section--top">
-        <!-- <label class="switch">
+        <div class="flex-container">
+          <!-- <label class="switch">
           <input class="switch__checkbox" type="checkbox" />
           <span class="switch__slider"></span>
         </label> -->
 
-        <div class="message">
-          <h1 class="message__welcome" id="welcome-message"></h1>
-          <p class="message__invite">Let's dive into my work.</p>
-        </div>
+          <div class="message">
+            <h1 class="message__welcome" id="welcome-message"></h1>
+            <p class="message__invite">Let's dive into my work.</p>
+          </div>
 
-        <div class="background">
-          <img class="background__image" src="img/ColorManImg.png" />
-        </div>
+          <div class="background">
+            <img class="background__image" src="img/ColorManImg.png" />
+          </div>
 
-        <!-- <div class="box">
+          <!-- <div class="box">
           <p class="arrow">&#8595;</p>
         </div> -->
-
-        <h6 class="sub-title title-one">Portfolio</h6>
+        </div>
+        <div class="sub-title">
+          <h6 class="sub-title__phrase sub-title__one">Portfolio</h6>
+        </div>
       </section>
 
       <section class="section section--mid" id="about">
-        <div class="flexbox flexbox--mid">
-          <div class="top">
-            <div class="corner corner--one"></div>
-            <div class="corner corner--two"></div>
-          </div>
+        <div class="flex-container">
+          <div class="flexbox flexbox--mid">
+            <div class="top">
+              <div class="corner corner--one"></div>
+              <div class="corner corner--two"></div>
+            </div>
 
-          <h1 class="header-mid">About me</h1>
-          <hr class="underline" />
-          <div class="headshot-container">
-            <div class="headshot-outline">
-              <img class="headshot" src="img/ColorManImg.png" />
+            <h1 class="header-mid">About me</h1>
+            <hr class="underline" />
+            <div class="headshot-container">
+              <div class="headshot-outline">
+                <img class="headshot" src="img/ColorManImg.png" />
+              </div>
+            </div>
+            <p class="details">
+              Hi, my name is
+              <span class="fullname">Arkadiusz Nowacki</span> . I am a 3rd-year
+              student who is passionate about Java and Web development.
+              Currently studying in
+              <span class="city">London&#x1F306;</span> and looking forward to
+              pursuing my career there.
+            </p>
+
+            <div class="bottom">
+              <div class="corner corner--three"></div>
+              <div class="corner corner--four"></div>
             </div>
           </div>
-          <p class="details">
-            Hi, my name is
-            <span class="fullname">Arkadiusz Nowacki</span> . I am a 3rd-year
-            student who is passionate about Java and Web development. Currently
-            studying in <span class="city">London&#x1F306;</span> and looking
-            forward to pursuing my career there.
-          </p>
-
-          <div class="bottom">
-            <div class="corner corner--three"></div>
-            <div class="corner corner--four"></div>
-          </div>
         </div>
-
-        <h6 class="sub-title title-two">My journey</h6>
+        <div class="sub-title">
+          <h6 class="sub-title__phrase sub-title__two">My journey</h6>
+        </div>
       </section>
 
       <section class="section section--bot" id="projects">
-        <!-- <div class="signature">
+        <div class="flex-container">
+          <!-- <div class="signature">
           <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
           <h2 class="signature__title">Java Dev & Web passionate</h2>
         </div> -->
-        <h2 class="project-title">Projects</h2>
+          <h2 class="project-title">Projects</h2>
 
-        <div class="flexbox flexbox--bot">
-          <div class="project">
-            <img
-              class="project__image image__one"
-              src="img/projectOneImg.PNG"
-              alt="Platform game image"
-            />
+          <div class="flexbox flexbox--bot">
+            <div class="project">
+              <img
+                class="project__image image__one"
+                src="img/projectOneImg.PNG"
+                alt="Platform game image"
+              />
+            </div>
+            <p class="flexbox__description">
+              Platform theme game that would suit itself inside of most browsers
+              by utilizing <span class="javascript">JavaScript</span> and
+              <span class="html">HTML</span>. In addition, the
+              <span class="p5">p5.js</span> library has been used for the
+              advantage of this project.
+            </p>
+            <p class="flexbox__button">
+              <a
+                class="project-link"
+                href="https://github.com/ArkadiusN/Platform-Game"
+                >View here</a
+              >
+            </p>
           </div>
-          <p class="flexbox__description">
-            Platform theme game that would suit itself inside of most browsers
-            by utilizing <span class="javascript">JavaScript</span> and
-            <span class="html">HTML</span>. In addition, the
-            <span class="p5">p5.js</span> library has been used for the
-            advantage of this project.
-          </p>
-          <p class="flexbox__button">
-            <a
-              class="project-link"
-              href="https://github.com/ArkadiusN/Platform-Game"
-              >View here</a
-            >
-          </p>
+
+          <div class="flexbox flexbox--bot">
+            <div class="project">
+              <img
+                class="project__image image__two"
+                src="img/projectTwoImg.PNG"
+                alt="Drawing app image"
+              />
+            </div>
+            <p class="flexbox__description">
+              Painting app called "<span class="app-title">N&B drawing</span>"
+              that allows its users to make an art in a browser. Range of
+              drawing options and ability to save them.
+            </p>
+            <p class="flexbox__button">
+              <a
+                class="project-link"
+                href="https://github.com/ArkadiusN/Painting-app"
+                >View here</a
+              >
+            </p>
+          </div>
+
+          <div class="flexbox flexbox--bot">
+            <div class="project">
+              <img
+                class="project__image image__three"
+                src="img/toDoApp.PNG"
+                alt="Remainder todo app image"
+              />
+            </div>
+            <p class="flexbox__description">
+              Todo application made with utilization of
+              <span class="java">Java</span> and its library called
+              <span class="swing"> Java Swing</span>.
+            </p>
+            <p class="flexbox__button">
+              <a
+                class="project-link"
+                href="https://github.com/ArkadiusN/ToDo-App"
+                >View here</a
+              >
+            </p>
+          </div>
+
+          <div class="flexbox flexbox--bot flexbox--bot--last">
+            <div class="project">
+              <img
+                class="project__image image__four"
+                src="img/flightBookingSystem.PNG"
+                alt="Low-level booking system image"
+              />
+            </div>
+            <p class="flexbox__description">
+              A flight booking system that reads the lists of passengers and
+              decides upon how to allocate them to seats. Accordingly, it checks
+              whether other criteria were met such as the aircraft weight after
+              boarding.
+            </p>
+            <p class="flexbox__button">
+              <a
+                class="project-link"
+                href="https://github.com/ArkadiusN/Flight-booking-system"
+                >View here</a
+              >
+            </p>
+          </div>
         </div>
 
-        <div class="flexbox flexbox--bot">
-          <div class="project">
-            <img
-              class="project__image image__two"
-              src="img/projectTwoImg.PNG"
-              alt="Drawing app image"
-            />
-          </div>
-          <p class="flexbox__description">
-            Painting app called "<span class="app-title">N&B drawing</span>"
-            that allows its users to make an art in a browser. Range of drawing
-            options and ability to save them.
-          </p>
-          <p class="flexbox__button">
-            <a
-              class="project-link"
-              href="https://github.com/ArkadiusN/Painting-app"
-              >View here</a
-            >
-          </p>
+        <div class="sub-title">
+          <h6 class="sub-title__phrase sub-title__three">Work</h6>
         </div>
-
-        <div class="flexbox flexbox--bot">
-          <div class="project">
-            <img
-              class="project__image image__three"
-              src="img/toDoApp.PNG"
-              alt="Remainder todo app image"
-            />
-          </div>
-          <p class="flexbox__description">
-            Todo application made with utilization of
-            <span class="java">Java</span> and its library called
-            <span class="swing"> Java Swing</span>.
-          </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/ToDo-App"
-              >View here</a
-            >
-          </p>
-        </div>
-
-        <div class="flexbox flexbox--bot">
-          <div class="project">
-            <img
-              class="project__image image__four"
-              src="img/flightBookingSystem.PNG"
-              alt="Low-level booking system image"
-            />
-          </div>
-          <p class="flexbox__description">
-            A flight booking system that reads the lists of passengers and
-            decides upon how to allocate them to seats. Accordingly, it checks
-            whether other criteria were met such as the aircraft weight after
-            boarding.
-          </p>
-          <p class="flexbox__button">
-            <a
-              class="project-link"
-              href="https://github.com/ArkadiusN/Flight-booking-system"
-              >View here</a
-            >
-          </p>
-        </div>
-        <h6 class="sub-title title-three">Work</h6>
       </section>
 
       <div class="footer">
