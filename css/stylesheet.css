@@ -108,7 +108,7 @@ body {
   /* border-bottom: 5px solid #ff4f00;
   border-top: 5px solid #ff4f00; */
   font-family: Inter, sans-serif;
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 /* ------------------NAVBAR------------------ */
@@ -211,23 +211,6 @@ body {
   letter-spacing: 0.05em;
 }
 
-.sub-title {
-  display: flex;
-  justify-content: center;
-}
-
-.sub-title__phrase {
-  line-height: 28px;
-  color: black;
-  font-weight: 400;
-  font-family: var(--ff-sub);
-  font-size: 20px;
-  padding-right: 13px;
-  padding-left: 13px;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-}
-
 .sub-title__two {
   color: white;
   border-color: white;
@@ -252,20 +235,81 @@ main {
 
   /* scroll-snap-align: start; */
 }
+/* --------------------- */
 
-.flex-container {
+/* --------------------- */
+.flexbox-main-container {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 181px);
+}
+
+.flexbox-container-one {
+  height: calc(100vh - 281px);
+  width: 100%;
+  background-color: red;
+}
+
+.flexbox-message {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
+.message {
+  display: flex;
+  max-width: 45rem;
+  filter: drop-shadow(2px 2px 5px var(--black));
+  margin: 0 2.5rem 0 2.5rem;
+}
+
+.flexbox-container-two {
+  height: calc(100vh - 610px);
+  width: 100%;
+  background-color: yellow;
+}
+
+.flexbox-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sub-title__phrase {
+  line-height: 28px;
+  color: black;
+  font-weight: 400;
+  font-family: var(--ff-sub);
+  font-size: 20px;
+  padding-right: 13px;
+  padding-left: 13px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+/* --------------------- */
+
+/* -------------------------- */
+/* .flexbox-container { */
+/* display: flex; */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+/* min-height: calc(100vh - 181px); */
+/* } */
+
 .section--top {
-  background-color: #ff4f00;
+  /* background-color: #ff4f00;
   background-image: url(/img/background.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: calc(100vh - 181px); /* 100vh - height of navbar*/
+  background-size: cover; */
+  min-height: calc(100vh - 181px);
+  /* 100vh - height of navbar*/
 }
 
 .section--mid {
@@ -278,12 +322,12 @@ main {
 }
 
 /* ------------------FLEX BOXES------------------ */
-.message {
+/* .message {
   display: flex;
   max-width: 45rem;
   filter: drop-shadow(2px 2px 5px var(--black));
   margin: 5rem 2.5rem 5rem 2.5rem;
-}
+} */
 
 .message__welcome {
   background-color: #ff4f00;
