@@ -267,7 +267,7 @@ main {
 }
 
 .flexbox-container-two {
-  height: calc(100vh - 610px);
+  height: calc(100vh - 85.2vh);
   width: 100%;
   background-color: yellow;
 }
@@ -290,6 +290,32 @@ main {
   padding-left: 13px;
   border-left: 3px solid black;
   border-right: 3px solid black;
+}
+
+.flexbox-main-container-mid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flexbox-container-three {
+  align-self: center;
+  width: 100%;
+  background-color: red;
+}
+
+.flexbox-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flexbox-container-four {
+  min-height: 20vh;
+  width: 100%;
+  background-color: blue;
 }
 
 /* --------------------- */
@@ -365,14 +391,11 @@ main {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.flexbox {
+.about {
+  max-width: 31.25rem;
+  margin: 0 1.5rem 0 1.5rem;
   background-color: var(--charcoal);
   box-shadow: var(--b-sh);
-}
-
-.flexbox--mid {
-  max-width: 31.25rem;
-  margin: 3rem 1.5rem 5rem 1.5rem;
 }
 
 .top,
@@ -456,7 +479,7 @@ hr {
   font-weight: var(--fw-m);
   letter-spacing: 0.075rem;
   line-height: 1.9rem;
-  padding: 0 2.5rem 3.375rem 2.5rem;
+  padding: 0 1.25rem 3.375rem 1.25rem; /* was 2.5 left and right*/
   text-align: center;
 }
 
