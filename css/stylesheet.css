@@ -211,16 +211,6 @@ body {
   letter-spacing: 0.05em;
 }
 
-.sub-title__two {
-  color: white;
-  border-color: white;
-}
-
-.sub-title__three {
-  color: white;
-  border-color: white;
-}
-
 /* ------------------SECTIONS------------------ */
 main {
   height: 100vh;
@@ -239,7 +229,6 @@ main {
 
 /* --------------------- */
 .flexbox-main-container {
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 181px);
@@ -248,7 +237,6 @@ main {
 .flexbox-container-one {
   height: calc(100vh - 281px);
   width: 100%;
-  background-color: red;
 }
 
 .flexbox-message {
@@ -269,7 +257,6 @@ main {
 .flexbox-container-two {
   height: calc(100vh - 85.2vh);
   width: 100%;
-  background-color: yellow;
 }
 
 .flexbox-text {
@@ -299,9 +286,8 @@ main {
 }
 
 .flexbox-container-three {
-  align-self: center;
+  min-height: 80vh;
   width: 100%;
-  background-color: red;
 }
 
 .flexbox-about {
@@ -309,13 +295,41 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 80vh;
 }
 
 .flexbox-container-four {
-  min-height: 20vh;
+  height: 20vh;
   width: 100%;
-  background-color: blue;
+}
+
+.sub-title__two {
+  color: white;
+  border-color: white;
+}
+
+.sub-title__three {
+  color: white;
+  border-color: white;
+}
+
+.flexbox-main-container-bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ed225d;
+}
+
+.flexbox-card {
+  margin: 0 1.5rem 3rem 1.5rem;
+  max-width: 18rem;
+  background-color: var(--charcoal);
+  box-shadow: var(--b-sh);
+}
+
+.polygon {
+  clip-path: polygon(0 0, 100% 0, 101% 85%, -16% 100%);
 }
 
 /* --------------------- */
@@ -330,10 +344,10 @@ main {
 /* } */
 
 .section--top {
-  /* background-color: #ff4f00;
+  background-color: #ff4f00;
   background-image: url(/img/background.png);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   min-height: calc(100vh - 181px);
   /* 100vh - height of navbar*/
 }
@@ -393,7 +407,7 @@ main {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .about {
   max-width: 31.25rem;
-  margin: 0 1.5rem 0 1.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
   background-color: var(--charcoal);
   box-shadow: var(--b-sh);
 }
