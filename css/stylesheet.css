@@ -211,10 +211,8 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* ------------------SECTIONS------------------ */
 main {
   height: 100vh;
-
   /* overflow: scroll; */
   /* scroll-snap-type: y mandatory;
   scroll-behavior: smooth; */
@@ -222,12 +220,9 @@ main {
 
 .section {
   min-height: 100vh;
-
   /* scroll-snap-align: start; */
 }
-/* --------------------- */
 
-/* --------------------- */
 .flexbox-main-container {
   display: flex;
   flex-direction: column;
@@ -236,7 +231,6 @@ main {
 
 .flexbox-container-one {
   height: calc(100vh - 281px);
-  width: 100%;
 }
 
 .flexbox-message {
@@ -256,7 +250,6 @@ main {
 
 .flexbox-container-two {
   height: calc(100vh - 85.2vh);
-  width: 100%;
 }
 
 .flexbox-text {
@@ -287,7 +280,6 @@ main {
 
 .flexbox-container-three {
   min-height: 80vh;
-  width: 100%;
 }
 
 .flexbox-about {
@@ -300,7 +292,6 @@ main {
 
 .flexbox-container-four {
   height: 20vh;
-  width: 100%;
 }
 
 .sub-title__two {
@@ -318,7 +309,6 @@ main {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: #ed225d;
 }
 
 .flexbox-card {
@@ -332,16 +322,9 @@ main {
   clip-path: polygon(0 0, 100% 0, 101% 85%, -16% 100%);
 }
 
-/* --------------------- */
-
-/* -------------------------- */
-/* .flexbox-container { */
-/* display: flex; */
-/* flex-direction: column; */
-/* justify-content: center; */
-/* align-items: center; */
-/* min-height: calc(100vh - 181px); */
-/* } */
+.flexbox-container-five {
+  height: 20vh;
+}
 
 .section--top {
   background-color: #ff4f00;
@@ -358,16 +341,7 @@ main {
 
 .section--bot {
   background-color: #362222;
-  justify-content: flex-start;
 }
-
-/* ------------------FLEX BOXES------------------ */
-/* .message {
-  display: flex;
-  max-width: 45rem;
-  filter: drop-shadow(2px 2px 5px var(--black));
-  margin: 5rem 2.5rem 5rem 2.5rem;
-} */
 
 .message__welcome {
   background-color: #ff4f00;
@@ -404,7 +378,6 @@ main {
   display: none;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .about {
   max-width: 31.25rem;
   margin: 1.5rem 1.5rem 1.5rem 1.5rem;
@@ -532,16 +505,6 @@ hr {
 }
 
 /* _______________________________________________________ */
-
-.flexbox--bot {
-  margin: 0 1.5rem 3rem 1.5rem;
-  max-width: 18rem;
-}
-
-.flexbox--bot--last {
-  margin-bottom: 5rem;
-}
-
 .project-title {
   font-family: var(--ff-sub);
   color: var(--white);
@@ -551,10 +514,6 @@ hr {
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
-}
-
-.project {
-  clip-path: polygon(0 0, 100% 0, 101% 85%, -16% 100%);
 }
 
 .project__image {
@@ -666,6 +625,8 @@ hr {
   color: var(--white);
 }
 
+/* --------------------- */
+/* --- MEDIA QUERIES --- */
 @media (min-width: 1350px) {
   .header__logo {
     width: 75px;
