@@ -291,7 +291,11 @@ main {
 }
 
 .flexbox-container-four {
+  width: 100%;
   height: 20vh;
+  background-image: url(/img/about-background.png);
+  background-size: cover;
+  background-position: 0%;
 }
 
 .sub-title__two {
@@ -323,7 +327,11 @@ main {
 }
 
 .flexbox-container-five {
+  width: 100%;
   height: 20vh;
+  background-image: url(/img/projects-background.png);
+  background-size: cover;
+  background-position: 0%;
 }
 
 .section--top {
