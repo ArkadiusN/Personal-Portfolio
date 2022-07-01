@@ -224,12 +224,8 @@ body {
 .hamburger {
   display: inline-block;
   cursor: pointer;
-  margin-right: 2rem;
-  background-color: var(--bright-red);
+  margin-right: 3rem;
   position: relative;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
 }
 
 .button {
@@ -237,6 +233,27 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
+.button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background-color: red;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover::before {
+  content: "";
+  height: 50px;
+  width: 50px;
 }
 
 .bar1,
