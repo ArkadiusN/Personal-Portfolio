@@ -1,9 +1,20 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("sideNav").style.width = "50%";
-}
-
-/* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("sideNav").style.width = "0";
+  document.getElementById("btt").classList.toggle("change");
+}
+
+function checkNavDisplayed() {
+  if (document.getElementsByClassName("button change").length > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function hideOrShowNav() {
+  if (checkNavDisplayed() == true) {
+    document.getElementById("sideNav").style.width = "50%";
+  } else {
+    document.getElementById("sideNav").style.width = "0";
+  }
 }

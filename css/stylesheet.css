@@ -246,7 +246,7 @@ body {
   height: 4px;
   background-color: white;
   margin: 5px 0;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .change .bar1 {
@@ -276,17 +276,41 @@ body {
 
 /* The navigation menu links */
 .side-navbar a {
-  padding: 8px 8px 8px 32px;
+  padding: 18px 8px 18px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
+  position: relative;
 }
 
-/* When you mouse over the navigation links, change their color */
+.link__project::after,
+.link__about-me::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(255, 79, 0);
+  transform: scaleX(0.5) translate(0px, -30px);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+
 .side-navbar a:hover {
   color: rgb(255, 79, 0);
+}
+
+.link__about-me:hover::after {
+  width: 27px;
+  transform: scaleX(2.5) translate(0px, -30px);
+}
+
+.link__project:hover::after {
+  width: 36px;
+  transform: scaleX(2.5) translate(0px, -30px);
 }
 
 /* Position and style the close button (top right corner) */
