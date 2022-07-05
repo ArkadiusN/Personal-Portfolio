@@ -191,16 +191,6 @@ body {
   position: relative;
 }
 
-/* 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--black);
-  height: 20vh;
-} */
-
 .nav__links {
   padding: 0;
   margin: 0;
@@ -246,7 +236,7 @@ body {
   height: 0px;
   width: 0px;
   border-radius: 50%;
-  background-color: red;
+  background-color: rgb(255, 79, 0);
   transition: 0.3s ease-in-out;
 }
 
@@ -291,9 +281,8 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-/* The navigation menu links */
 .side-navbar a {
-  padding: 18px 8px 18px 32px;
+  padding: 18px 32px 18px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -330,13 +319,16 @@ body {
   transform: scaleX(2.5) translate(0px, -30px);
 }
 
-/* Position and style the close button (top right corner) */
 .side-navbar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 40px;
   margin-left: 50px;
+}
+
+.side-navbar .closebtn:hover {
+  color: white;
 }
 
 main {
@@ -474,11 +466,76 @@ main {
 
 .section--top {
   background-color: #ff4f00;
-  background-image: url(/img/background.png);
+  /* background-image: url(/img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: calc(100vh - 181px);
+  min-height: calc(100vh - 181px); */
   /* 100vh - height of navbar*/
+
+  /* Use previous one for old styling ot */
+
+  min-height: calc(100vh - 100.5px);
+}
+
+.flexbox-container {
+  height: calc(100vh - 100.5px);
+  background-color: black;
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-one {
+  background-color: #ff5722;
+}
+
+.hello {
+  padding: 10px;
+}
+
+.flexbox-two {
+  background-color: snow;
+}
+
+.myname {
+  display: inline;
+  font-family: var(--ff-sub);
+  font-weight: var(--fw-b);
+  font-size: 45px;
+  padding: 10px;
+}
+
+.flexbox-three {
+  background-color: peachpuff;
+}
+
+.littleabout {
+  font-family: var(--ff-sub);
+  font-size: 18px;
+  padding: 10px;
+}
+
+.flexbox-four {
+  padding: 10px;
+  background-color: coral;
+}
+
+.btn-one {
+  color: var(--white);
+  border-radius: 5px;
+  background-color: inherit;
+  width: 200px;
+  padding: 15px 0px 15px 0px;
+}
+
+.btn-two {
+  color: var(--white);
+  border-radius: 5px;
+  background-color: var(--black);
+  width: 200px;
+  padding: 15px 0px 15px 0px;
 }
 
 .section--mid {
