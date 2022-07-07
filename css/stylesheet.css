@@ -176,9 +176,9 @@ body {
 }
 
 .header__logo {
-  margin: 1rem;
-  width: 65px;
-  height: 65px;
+  margin-left: 1rem;
+  width: 45px;
+  height: 45px;
 }
 
 .navbar {
@@ -187,7 +187,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--black);
-  min-height: 15vh;
+  min-height: 10vh;
   position: relative;
 }
 
@@ -478,7 +478,7 @@ main {
 }
 
 .flexbox-container {
-  height: calc(100vh - 100.5px);
+  height: calc(100vh - 10vh);
   background-color: #333333; /* #393939 also works */
   /* outline: 1px solid blue; */
   display: flex;
@@ -530,11 +530,17 @@ main {
 } */
 
 .myname {
+  overflow-wrap: break-word;
   color: white;
   font-family: var(--ff-sub);
   font-weight: var(--fw-b);
-  font-size: 45px;
+  font-size: 55px;
   padding: 18px 7px 10px 7px;
+}
+
+.arek {
+  display: inline-block;
+  word-wrap: break-word;
 }
 
 .punctuation {
@@ -558,6 +564,7 @@ main {
 .flexbox-four {
   align-self: flex-start;
   padding: 10px;
+  font-size: 0;
   /* background-color: coral; */
 }
 
@@ -572,6 +579,7 @@ main {
   background-color: #ff5722;
   width: 200px;
   padding: 15px 0px 15px 0px;
+  margin-right: 5px;
 }
 
 .btn-two {
@@ -585,6 +593,7 @@ main {
   background-color: var(--black);
   width: 200px;
   padding: 15px 0px 15px 0px;
+  margin-left: 5px;
 }
 
 .section--mid {
@@ -878,11 +887,13 @@ hr {
   color: var(--white);
 }
 
-@media (max-width: 465px) {
+@media (max-width: 470px) {
   .btn-one,
   .btn-two {
     display: block;
     margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
