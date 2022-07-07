@@ -176,7 +176,7 @@ body {
 }
 
 .header__logo {
-  margin-left: 1rem;
+  margin-left: 2rem;
   width: 45px;
   height: 45px;
 }
@@ -189,6 +189,30 @@ body {
   background-color: var(--black);
   min-height: 10vh;
   position: relative;
+  outline: 1px solid rgb(255, 87, 34);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.right-side__link {
+  color: var(--white) !important;
+  padding-right: 3rem;
+  transition: color 0.5s ease-in;
+}
+
+.github-icon {
+  font-size: 32px !important;
+  transition: color 0.3s ease-in;
+}
+
+.github-icon:hover {
+  color: rgb(255, 87, 34);
 }
 
 .nav__links {
@@ -242,22 +266,22 @@ body {
 
 .button:hover::before {
   content: "";
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  width: 28px;
-  height: 4px;
+  width: 25px;
+  height: 3px;
   background-color: white;
   margin: 5px 0;
   transition: 0.3s ease-in;
 }
 
 .change .bar1 {
-  transform: rotate(-45deg) translate(-7px, 6px);
+  transform: rotate(-45deg) translate(-6px, 5px);
 }
 
 .change .bar2 {
@@ -265,7 +289,7 @@ body {
 }
 
 .change .bar3 {
-  transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -5px);
 }
 
 .side-navbar {
@@ -479,7 +503,7 @@ main {
 
 .flexbox-container {
   height: calc(100vh - 10vh);
-  background-color: #333333; /* #393939 also works */
+  background-color: var(--black); /* #333333 or #393939 also works */
   /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
@@ -530,7 +554,6 @@ main {
 } */
 
 .myname {
-  overflow-wrap: break-word;
   color: white;
   font-family: var(--ff-sub);
   font-weight: var(--fw-b);
@@ -837,7 +860,7 @@ hr {
   width: 220px;
 }
 
-.fa {
+.footer-icon {
   font-size: var(--fs-2) !important;
   margin-right: 0.375rem;
   transform: translateY(3px);
@@ -887,6 +910,17 @@ hr {
   color: var(--white);
 }
 
+@media (max-width: 324px) {
+  .flexbox-inner {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .myname {
+    font-size: 45px;
+  }
+}
+
 @media (max-width: 470px) {
   .btn-one,
   .btn-two {
@@ -899,8 +933,27 @@ hr {
 
 @media (min-width: 768px) {
   .header__logo {
-    width: 95px;
-    height: 95px;
+    margin: 1rem 0 1rem 2rem;
+    width: 55px;
+    height: 55px;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 28px;
+    height: 4px;
+  }
+
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+
+  .button:hover::before {
+    height: 50px;
+    width: 50px;
   }
 
   .nav__links li a {
