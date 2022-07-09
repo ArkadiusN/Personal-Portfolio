@@ -478,6 +478,26 @@ main {
   border-color: white;
 }
 
+.card-grid {
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 200px 200px;
+  grid-auto-rows: 300px;
+  grid-auto-columns: 200px;
+  grid-auto-flow: column dense;
+  background-color: gray;
+}
+
+[class^="grid-item"] {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  outline: 3px dashed black;
+  font-size: 30px;
+  color: #333;
+}
+
 .flexbox-main-container-bot {
   display: flex;
   flex-direction: column;
@@ -1008,7 +1028,7 @@ hr {
   }
 
   .flexbox__description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 2rem 2rem 0rem 2rem;
     line-height: 1.3rem;
     letter-spacing: 0.045rem;
