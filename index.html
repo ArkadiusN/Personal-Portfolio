@@ -5,13 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/stylesheet.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- FONTS -->
   <link
     href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,800;1,700&display=swap"
     rel="stylesheet" />
@@ -22,29 +16,21 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- ### -->
+  <!-- SCRIPTS -->
   <script defer src="js/welcome-message.js"></script>
   <script defer src="js/scroll-top.js"></script>
   <script defer src="js/date-object.js"></script>
   <script defer src="js/dark-mode.js"></script>
   <script defer src="js/side-navbar.js"></script>
   <script defer src="js/hamburger-click.js"></script>
+  <!-- ### -->
   <title>Portfolio</title>
 </head>
 
 <body>
   <main>
     <header class="header">
-      <!-- <img class="header__logo" src="img/logo2.svg" />
-        <nav class="navbar">
-          <ul class="nav__links">
-            <li>
-              <a class="link__about-me" href="#about">About</a>
-            </li>
-            <li>
-              <a class="link__project" href="#projects">Projects</a>
-            </li>
-          </ul>
-        </nav> -->
       <nav class="navbar">
         <img class="header__logo" src="img/logo2.svg" />
         <div class="right-side">
@@ -66,46 +52,10 @@
             </div>
           </div>
         </div>
-        <!-- <a class="footer__link" href="https://github.com/ArkadiusN"><i class="fa">&#xf09b;</i></a>
-          <div class="side-navbar" id="sideNav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-              >&times;</a
-            >
-            <a class="link__about-me" href="#about">About</a>
-            <a class="link__project" href="#projects">Projects</a>
-            <a>
-              <label class="switch">
-                <input class="switch__checkbox" type="checkbox" />
-                <span class="switch__slider"></span> </label
-            ></a>
-          </div>
-          <div class="hamburger" onclick="hideOrShowNav()">
-            <div class="button" id="btt" onclick="myFunction(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-          </div> -->
       </nav>
     </header>
 
     <section class="section section--top">
-      <!-- <div class="flexbox-main-container">
-          <div class="flexbox-container-one">
-            <div class="flexbox-message">
-              <div class="message">
-                <h1 class="message__welcome" id="welcome-message"></h1>
-                <p class="message__invite">Let's dive into my work.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flexbox-container-two">
-            <div class="flexbox-text">
-              <h6 class="sub-title__phrase sub-title__one">Portfolio</h6>
-            </div>
-          </div>
-        </div> -->
-
       <div class="flexbox-container">
         <div class="flexbox-inner">
           <div class="flexbox-one">
@@ -131,24 +81,6 @@
           <p class="arrow">&#8595;</p>
         </div>
       </div>
-
-      <!-- <div class="flexbox-container">
-          <div class="message">
-            <h1 class="message__welcome" id="welcome-message"></h1>
-            <p class="message__invite">Let's dive into my work.</p>
-          </div>
-
-          <div class="background">
-            <img class="background__image" src="img/ColorManImg.png" />
-          </div> -->
-
-      <!-- <div class="box">
-          <p class="arrow">&#8595;</p>
-        </div> -->
-      <!-- <div class="sub-title">
-            <h6 class="sub-title__phrase sub-title__one">Portfolio</h6>
-          </div>
-        </div> -->
     </section>
 
     <section class="section section--mid" id="about">
@@ -192,7 +124,6 @@
     </section>
 
     <section class="section section--bot" id="projects">
-      <!--  -->
       <h2 class="project-title">Projects</h2>
       <div class="card-grid">
         <div class="grid-item-1">
@@ -253,83 +184,16 @@
           </p>
         </div>
       </div>
-
-
-
-
-      <!-- <div class="flexbox-main-container-bot">
-
-
-
-        <div class="flexbox-card">
-          <div class="polygon">
-            <img class="project__image image__one" src="img/projectOneImg.PNG" alt="Platform game image" />
-          </div>
-          <p class="flexbox__description">
-            Platform theme game that would suit itself inside of most browsers
-            by utilizing
-            <span class="javascript">JavaScript</span> and
-            <span class="html">HTML</span>. In addition, the
-            <span class="p5">p5.js</span> library has been used for the
-            advantage of this project.
-          </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/Platform-Game">View here</a>
-          </p>
-        </div>
-        <div class="flexbox-card">
-          <div class="polygon">
-            <img class="project__image image__two" src="img/projectTwoImg.PNG" alt="Drawing app image" />
-          </div>
-          <p class="flexbox__description">
-            Painting app called "<span class="app-title">N&B drawing</span>"
-            that allows its users to make an art in a browser. Range of
-            drawing options and ability to save them.
-          </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/Painting-app">View here</a>
-          </p>
-        </div>
-        <div class="flexbox-card">
-          <div class="polygon">
-            <img class="project__image image__three" src="img/toDoApp.PNG" alt="Remainder todo app image" />
-          </div>
-          <p class="flexbox__description">
-            Todo application made with utilization of
-            <span class="java">Java</span> and its library called
-            <span class="swing"> Java Swing</span>.
-          </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/ToDo-App">View here</a>
-          </p>
-        </div>
-        <div class="flexbox-card">
-          <div class="polygon">
-            <img class="project__image image__four" src="img/flightBookingSystem.PNG"
-              alt="Low-level booking system image" />
-          </div>
-          <p class="flexbox__description">
-            A flight booking system that reads the lists of passengers and
-            decides upon how to allocate them to seats. Accordingly, it checks
-            whether other criteria were met such as the aircraft weight after
-            boarding.
-          </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/Flight-booking-system">View here</a>
-          </p>
-        </div>
-      </div> -->
       <!-- <div class="signature">
           <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
           <h2 class="signature__title">Java Dev & Web passionate</h2>
-          </div> -->
+        </div> -->
       <div class="flexbox-container-five">
         <div class="flexbox-text">
           <h6 class="sub-title__phrase sub-title__three">Work</h6>
         </div>
       </div>
     </section>
-
     <div class="footer">
       <p class="footer__text" id="footer-text"></p>
       <a class="footer__link" href="https://github.com/ArkadiusN"><i class="fa footer-icon">&#xf09b;</i>My GitHub</a>
