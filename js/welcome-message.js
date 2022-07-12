@@ -6,13 +6,13 @@
   var message;
 
   if (hourNow >= 17 && minuteNow > 0) {
-    message = "Good evening";
+    message = "Good evening, I am";
   } else if (hourNow > 11 && minuteNow >= 0) {
-    message = "Good afternoon";
+    message = "Good afternoon, I am";
   } else if (hourNow >= 2) {
-    message = "Good morning";
+    message = "Good morning, I am";
   } else {
-    message = "Welcome";
+    message = "Welcome, I am";
   }
   elMessage.textContent = message;
 })();

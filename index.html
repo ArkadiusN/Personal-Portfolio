@@ -56,50 +56,55 @@
     </header>
 
     <section class="section section--top">
-      <div class="flexbox-container">
+      <div class="flexbox-outer">
         <div class="flexbox-inner">
-          <div class="flexbox-one">
-            <p class="hello">Hello, I am</p>
+          <div class="container-one">
+            <p class="container-one__hello" id="welcome-message"></p>
           </div>
-          <div class="underhello">
-            <p class="triangle"></p>
+          <div class="container-two">
+            <p class="container-two__triangle"></p>
           </div>
-          <div class="flexbox-two">
-            <h1 class="myname">Mr<span class="punctuation">.</span><span class="arek">Arkadiusz</span> Nowacki
+          <div class="container-three">
+            <h1 class="container-three__text">
+              Mr<span class="container-three__dot">.</span><span class="container-three__fullname">Arkadiusz</span>
+              Nowacki
+            </h1>
           </div>
-          <div class="flexbox-three">
-            <h3 class="littleabout">
-              Java Dev <span class="punctuation">&</span> Web passionate
+          <div class="container-four">
+            <h3 class="container-four__about">
+              Java Dev
+              <span class="container-four__ampersand">&</span>
+              Web passionate
             </h3>
           </div>
-          <div class="flexbox-four">
-            <button class="btn-one">Download CV</button>
-            <button class="btn-two">My work</button>
+          <div class="container-five">
+            <button class="container-five__btn btn-one">Download CV</button>
+            <button class="container-five__btn btn-two">My work</button>
           </div>
         </div>
-        <div class="box">
-          <p class="arrow">&#8595;</p>
+        <div class="indicator">
+          <p class="indicator__arrow">&#8595;</p>
         </div>
       </div>
     </section>
 
     <section class="section section--mid" id="about">
-      <div class="flexbox-main-container-mid">
-        <div class="flexbox-container-three">
-          <div class="flexbox-about">
-            <div class="about">
-              <div class="top">
-                <div class="corner corner--one"></div>
-                <div class="corner corner--two"></div>
+      <div class="flexbox-mid-outer">
+        <div class="flexbox-mid-inner">
+          <div class="about">
+            <div class="about-wrapper">
+              <div class="flex-container-one">
+                <div class="flex-container-one__corner corner-one"></div>
+                <div class="flex-container-one__corner corner-two"></div>
               </div>
-              <h1 class="header-mid">About me</h1>
-              <hr class="underline" />
-              <div class="headshot-container">
-                <div class="headshot-outline">
-                  <img class="headshot" src="img/ColorManImg.png" />
+              <h1 class="about__header">About me</h1>
+              <hr class="about__underline" />
+              <div class="flex-headshot-container">
+                <div class="flex-headshot-outline">
+                  <img class="headshot__img" src="img/ColorManImg.png" />
                 </div>
               </div>
-              <p class="details">
+              <p class="about__details">
                 Hi, my name is
                 <span class="fullname">Arkadiusz Nowacki</span> . I am a
                 3rd-year student who is passionate about Java and Web
@@ -107,17 +112,16 @@
                 <span class="city">London&#x1F306;</span> and looking forward
                 to pursue my career here.
               </p>
-
-              <div class="bottom">
-                <div class="corner corner--three"></div>
-                <div class="corner corner--four"></div>
+              <div class="flex-container-two">
+                <div class="flex-container-two__corner corner-three"></div>
+                <div class="flex-container-two__corner corner-four"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flexbox-container-four">
-          <div class="flexbox-text">
-            <h6 class="sub-title__phrase sub-title__two">Insights</h6>
+        <div class="flexbox-quote flexbox-quote--one">
+          <div class="flexbox-quote-container">
+            <h6 class="flexbox-quote__text text__one">Insights</h6>
           </div>
         </div>
       </div>
@@ -127,10 +131,10 @@
       <h2 class="project-title">Projects</h2>
       <div class="card-grid">
         <div class="grid-item-1">
-          <div class="polygon">
+          <div class="project-container">
             <img class="project__image image__one" src="img/projectOneImg.PNG" alt="Platform game image" />
           </div>
-          <p class="flexbox__description">
+          <p class="item__description">
             Platform theme game that would suit itself inside of most browsers
             by utilizing
             <span class="javascript">JavaScript</span> and
@@ -138,59 +142,60 @@
             <span class="p5">p5.js</span> library has been used for the
             advantage of this project.
           </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/Platform-Game">View here</a>
+          <p class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/Platform-Game">View here</a>
           </p>
         </div>
         <div class="grid-item-2">
-          <div class="polygon">
+          <div class="project-container">
             <img class="project__image image__two" src="img/projectTwoImg.PNG" alt="Drawing app image" />
           </div>
-          <p class="flexbox__description">
+          <p class="item__description">
             Painting app called "<span class="app-title">N&B drawing</span>"
             that allows its users to make an art in a browser. Range of
             drawing options and ability to save them.
           </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/Painting-app">View here</a>
+          <p class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/Painting-app">View here</a>
           </p>
         </div>
         <div class="grid-item-3">
-          <div class="polygon">
+          <div class="project-container">
             <img class="project__image image__three" src="img/toDoApp.PNG" alt="Remainder todo app image" />
           </div>
-          <p class="flexbox__description">
+          <p class="item__description">
             Todo application made with utilization of
             <span class="java">Java</span> and its library called
             <span class="swing"> Java Swing</span>.
           </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/ToDo-App">View here</a>
+          <p class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/ToDo-App">View here</a>
           </p>
         </div>
         <div class="grid-item-4">
-          <div class="polygon">
+          <div class="project-container">
             <img class="project__image image__four" src="img/flightBookingSystem.PNG"
               alt="Low-level booking system image" />
           </div>
-          <p class="flexbox__description">
+          <p class="item__description">
             A flight booking system that reads the lists of passengers and
             decides upon how to allocate them to seats. Accordingly, it checks
             whether other criteria were met such as the aircraft weight after
             boarding.
           </p>
-          <p class="flexbox__button">
-            <a class="project-link" href="https://github.com/ArkadiusN/Flight-booking-system">View here</a>
+          <p class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/Flight-booking-system">View here</a>
           </p>
         </div>
       </div>
-      <!-- <div class="signature">
-          <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
-          <h2 class="signature__title">Java Dev & Web passionate</h2>
-        </div> -->
-      <div class="flexbox-container-five">
-        <div class="flexbox-text">
-          <h6 class="sub-title__phrase sub-title__three">Work</h6>
+
+      <div class="signature">
+        <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
+        <h2 class="signature__title">Java Dev & Web passionate</h2>
+      </div>
+      <div class="flexbox-quote flexbox-quote--two">
+        <div class="flexbox-quote-container">
+          <h6 class="flexbox-quote__text text__two">Work</h6>
         </div>
       </div>
     </section>
