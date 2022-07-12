@@ -580,7 +580,7 @@ hr {
   font-weight: var(--fw-m);
   letter-spacing: 0.075rem;
   line-height: 1.9rem;
-  padding: 0 1.25rem 3.375rem 1.25rem; /* was 2.5 left and right*/
+  padding: 0 1.75rem 3.375rem 1.75rem; /* was 2.5 left and right*/
   text-align: center;
 }
 
@@ -684,7 +684,7 @@ hr {
   align-self: flex-start;
   color: var(--white);
   font-family: var(--ff-sub);
-  font-size: 0.8rem;
+  font-size: 13px;
   /* letter-spacing: 0.075rem;
   line-height: 1.1rem; */
   line-height: 1.3rem;
@@ -716,7 +716,7 @@ hr {
   letter-spacing: 0.02rem;
   background: linear-gradient(45deg, transparent 8%, var(--dark-orange) 5%);
   color: var(--black);
-  font-size: var(--fs-def);
+  font-size: 13px;
   font-weight: 500;
   padding: 0.625rem;
 }
@@ -849,8 +849,7 @@ hr {
     padding-right: 0;
     padding-left: 0;
   }
-
-  .myname {
+  .container-three__text {
     font-size: 45px;
   }
 }
@@ -890,25 +889,10 @@ hr {
     width: 50px;
   }
 
-  .nav__links li a {
-    font-size: 22px;
+  .flexbox-inner {
   }
 
-  .section--top {
-    min-height: calc(100vh - 181px);
-  }
-
-  .message__invite {
-    font-size: 62.5px;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    line-height: calc(3.7rem + 0.5vw);
-  }
-
-  .message__welcome {
-    font-size: 40px;
-  }
-
-  .sub-title__phrase {
+  .flexbox-quote__text {
     font-size: 22px;
   }
 
@@ -925,8 +909,12 @@ hr {
     font-size: 45px;
   }
 
-  .project-link {
-    font-size: 1.1rem;
+  .button-link {
+    font-size: 15px;
+  }
+
+  .item__description {
+    font-size: 14px;
   }
 
   .scroll-top {
@@ -937,8 +925,5 @@ hr {
   .scroll-top-after {
     width: 55px;
     height: 55px;
-  }
-  .material-icons {
-    font-size: 28px !important;
   }
 }
