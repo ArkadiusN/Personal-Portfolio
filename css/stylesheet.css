@@ -129,7 +129,7 @@ main {
   background-color: var(--black);
   min-height: 10vh;
   position: relative;
-  outline: 1px solid rgb(255, 87, 34);
+  outline: 2px solid rgb(255, 87, 34);
 }
 
 .header__logo {
@@ -369,6 +369,7 @@ main {
   color: black;
   font-family: var(--ff-sub);
   font-weight: 500;
+  font-size: 14px;
   padding: 10px 35px 10px 35px;
 }
 
@@ -431,6 +432,7 @@ main {
   color: var(--white);
   font-family: var(--ff-sub);
   font-weight: 500;
+  font-size: 13px;
   letter-spacing: 0.05rem;
   border-radius: 5px;
   width: 200px;
@@ -543,7 +545,7 @@ hr {
   border: 0;
 }
 
-.underline {
+.about__underline {
   border-top: 1px solid #ff4f00;
   margin-left: 1.875rem;
   margin-right: 1.875rem;
@@ -852,6 +854,10 @@ hr {
   .container-three__text {
     font-size: 45px;
   }
+
+  .card-grid {
+    padding: 0 1.5rem 0 1.5rem;
+  }
 }
 
 @media (max-width: 470px) {
@@ -889,7 +895,24 @@ hr {
     width: 50px;
   }
 
-  .flexbox-inner {
+  .container-one__hello {
+    font-size: calc(13px + 0.5vw);
+  }
+
+  .container-three__text {
+    font-size: calc(56px + 1vw);
+  }
+
+  .container-four__about {
+    font-size: calc(15px + 0.3vw);
+  }
+
+  .container-five__btn {
+    width: 260px;
+  }
+
+  .container-five__btn {
+    font-size: calc(12px + 0.3vw);
   }
 
   .flexbox-quote__text {
@@ -925,5 +948,17 @@ hr {
   .scroll-top-after {
     width: 55px;
     height: 55px;
+  }
+}
+
+@media (min-width: 960px) {
+  .grid-item-4 {
+    grid-column: 2 / 3;
+  }
+}
+
+@media (min-width: 1295px) {
+  .grid-item-4 {
+    grid-column: 4;
   }
 }
