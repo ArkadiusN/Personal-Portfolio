@@ -138,6 +138,10 @@ main {
   height: 45px;
 }
 
+.line-navbar {
+  display: none;
+}
+
 .right-side {
   display: flex;
   flex-direction: row;
@@ -372,7 +376,13 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #e34c26;
+  border-bottom: 1px solid black;
   height: 104px;
+  transition: background-color 350ms linear;
+}
+
+.link-tree a:hover {
+  background-color: var(--black);
 }
 
 .tree-icon {
@@ -900,6 +910,25 @@ hr {
     width: 55px;
     height: 55px;
   }
+
+  .hamburger {
+    display: none;
+  }
+
+  .line-navbar {
+    display: inline;
+    margin-right: 2rem;
+  }
+
+  .line__link {
+    padding: 0.5rem;
+    color: var(--white);
+    font-family: var(--ff-sub);
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
   .bar1,
   .bar2,
   .bar3 {
@@ -992,6 +1021,12 @@ hr {
 }
 
 @media (min-width: 1295px) {
+  .flexbox-outer {
+    justify-content: space-evenly;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
   .grid-item-4 {
     grid-column: 4;
   }
