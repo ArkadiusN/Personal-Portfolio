@@ -344,7 +344,7 @@ main {
 }
 
 .flexbox-outer {
-  height: calc(100vh - 10vh);
+  min-height: calc(100vh - 10vh);
   background-color: var(--black); /* #333333 or #393939 also works */
   /* outline: 1px solid blue; */
   display: flex;
@@ -364,11 +364,7 @@ main {
 }
 
 .link-tree {
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-  background-color: white;
-  position: relative;
+  display: none;
 }
 
 .link-tree a {
@@ -378,19 +374,24 @@ main {
   background-color: #e34c26;
   border-bottom: 1px solid black;
   height: 104px;
+  width: 104px;
   transition: background-color 350ms linear;
-}
-
-.link-tree a:hover {
-  background-color: var(--black);
 }
 
 .tree-icon {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 32px !important;
+  font-size: 42px !important;
   transition: color 0.4s ease-out;
+}
+
+.link-tree a:hover {
+  background-color: var(--black);
+}
+
+.link-tree a:hover > i {
+  color: rgb(255, 87, 34);
 }
 
 .container-one {
@@ -474,15 +475,29 @@ main {
 }
 
 .btn-one {
-  border: none;
+  cursor: pointer;
+  border: 1px solid var(--black);
   background-color: #ff5722;
   margin-right: 5px;
+  transition: background-color 350ms linear, border 350ms linear;
+}
+
+.btn-one:hover {
+  border: 1px solid white;
+  background-color: black;
 }
 
 .btn-two {
+  cursor: pointer;
   border: 1px solid white;
   background-color: var(--black);
   margin-left: 5px;
+  transition: background-color 350ms linear, border 350ms linear;
+}
+
+.btn-two:hover {
+  border: 1px solid var(--black);
+  background-color: #ff5722;
 }
 
 .indicator {
@@ -531,7 +546,8 @@ main {
 
 .about-wrapper {
   max-width: 31.25rem;
-  margin: 3.5rem 1.5rem 1.5rem 1.5rem;
+  /* margin: 3.5rem 1.5rem 1.5rem 1.5rem; */
+  margin: 0 1.5rem 0 1.5rem;
   background-color: var(--charcoal);
   box-shadow: var(--b-sh);
 }
@@ -639,6 +655,7 @@ hr {
 
 .flexbox-quote--one {
   background-image: url(/img/about-background.png);
+  transition: background-image 500ms linear;
 }
 
 .flexbox-quote-container {
@@ -804,6 +821,7 @@ hr {
 
 .flexbox-quote--two {
   background-image: url(/img/projects-background.png);
+  transition: background-image 500ms linear;
 }
 
 .footer {
@@ -904,11 +922,21 @@ hr {
   }
 }
 
+@media (min-width: 575px) {
+  .flexbox-quote--one {
+    background-image: url(/img/about-background-two.png);
+  }
+}
+
 @media (min-width: 768px) {
   .header__logo {
-    margin: 1rem 0 1rem 2rem;
+    margin-left: 2rem;
     width: 55px;
     height: 55px;
+  }
+
+  .right-side__link {
+    display: none;
   }
 
   .hamburger {
@@ -916,17 +944,67 @@ hr {
   }
 
   .line-navbar {
-    display: inline;
+    display: flex;
     margin-right: 2rem;
+    height: 100%;
+  }
+
+  .line-navbar-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5722;
+  }
+
+  .line-navbar-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .line__link {
-    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: var(--white);
     font-family: var(--ff-sub);
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 0.05em;
+    transition: color 0.4s ease-out;
+    position: relative;
+  }
+
+  .line__link-one::after,
+  .line__link-two::after {
+    content: "";
+    position: absolute;
+    right: 55px;
+    top: 50px;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 79, 0);
+    transform: scaleX(0.5) translate(0px, -30px);
+    transform-origin: left;
+    transition: transform 250ms ease-in-out;
+  }
+
+  .line__link-two::after {
+    right: 68px;
+  }
+
+  .line__link-one:hover::after {
+    width: 27px;
+    transform: scaleX(2.5) translate(0px, -30px);
+  }
+
+  .line__link-two:hover::after {
+    width: 35px;
+    transform: scaleX(2.5) translate(0px, -30px);
+  }
+
+  .line__link:hover {
+    color: rgb(255, 87, 34);
   }
 
   .bar1,
@@ -966,6 +1044,14 @@ hr {
 
   .container-five__btn {
     font-size: calc(12px + 0.3vw);
+  }
+
+  .link-tree {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    margin-right: 20px;
   }
 
   .flexbox-quote__text {
@@ -1017,6 +1103,10 @@ hr {
 @media (min-width: 960px) {
   .grid-item-4 {
     grid-column: 2 / 3;
+  }
+
+  .flexbox-quote--two {
+    background-image: url(/img/project-background-two.png);
   }
 }
 
