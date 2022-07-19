@@ -117,6 +117,10 @@ main {
   scroll-behavior: smooth; */
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* ################################################################ */
 /*                         ################                         */
 /*                         ################                         */
@@ -129,7 +133,7 @@ main {
   background-color: var(--black);
   min-height: 10vh;
   position: relative;
-  outline: 2px solid rgb(255, 87, 34);
+  outline: 1px solid rgb(255, 87, 34);
 }
 
 .header__logo {
@@ -945,7 +949,6 @@ hr {
 
   .line-navbar {
     display: flex;
-    margin-right: 2rem;
     height: 100%;
   }
 
@@ -963,8 +966,9 @@ hr {
   }
 
   .line__link {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
     color: var(--white);
     font-family: var(--ff-sub);
     font-size: 19px;
@@ -978,8 +982,8 @@ hr {
   .line__link-two::after {
     content: "";
     position: absolute;
-    right: 55px;
-    top: 50px;
+    right: 68px;
+    top: 75px;
     bottom: 0;
     width: 0%;
     height: 3px;
@@ -989,12 +993,13 @@ hr {
     transition: transform 250ms ease-in-out;
   }
 
-  .line__link-two::after {
-    right: 68px;
+  .line__link-one::after {
+    background-color: rgb(0, 0, 0);
+    right: 74px;
   }
 
   .line__link-one:hover::after {
-    width: 27px;
+    width: 39px;
     transform: scaleX(2.5) translate(0px, -30px);
   }
 
@@ -1003,7 +1008,11 @@ hr {
     transform: scaleX(2.5) translate(0px, -30px);
   }
 
-  .line__link:hover {
+  .line__link-one:hover {
+    color: var(--black);
+  }
+
+  .line__link-two:hover {
     color: rgb(255, 87, 34);
   }
 
