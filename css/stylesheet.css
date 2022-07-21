@@ -125,6 +125,16 @@ main {
 /*                         ################                         */
 /*                         ################                         */
 /* #########################     NAVBAR    ######################## */
+.nice {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  z-index: 2;
+  animation: page-load 530ms ease-in 825ms;
+  animation-fill-mode: forwards;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -133,7 +143,7 @@ main {
   background-color: var(--black);
   min-height: 10vh;
   position: relative;
-  outline: 1px solid rgb(255, 87, 34);
+  border-bottom: 1px solid rgb(255, 87, 34);
 }
 
 .header__logo {
@@ -156,7 +166,7 @@ main {
 
 .right-side__link {
   color: var(--white) !important;
-  padding-right: 3rem;
+  margin-right: 3rem;
 }
 
 .github-icon {
@@ -350,7 +360,7 @@ main {
 .flexbox-outer {
   min-height: calc(100vh - 10vh);
   background-color: var(--black); /* #333333 or #393939 also works */
-  /* outline: 1px solid blue; */
+  border-bottom: 1px solid rgb(255, 87, 34);
   display: flex;
   flex-direction: row; /* was column */
   justify-content: center;
@@ -800,10 +810,12 @@ hr {
 
 .signature {
   min-width: 100%;
-  padding: 0 1.25em;
-  position: fixed;
-  top: 40px;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .signature__fullname {
@@ -819,7 +831,7 @@ hr {
   font-family: var(--ff-main);
   font-size: var(--fs-0);
   font-weight: var(--fw-b);
-  color: #ffffff;
+  color: #ff5722;
   margin-top: 0.3125em;
 }
 
@@ -897,6 +909,16 @@ hr {
   color: var(--white);
 }
 
+@keyframes page-load {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 /* ################################################################ */
 /*                         ################                         */
 /*                         ################                         */
@@ -941,6 +963,17 @@ hr {
 
   .right-side__link {
     display: none;
+  }
+
+  .link-tree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .link-tree__link {
+    color: var(--white) !important;
   }
 
   .hamburger {
