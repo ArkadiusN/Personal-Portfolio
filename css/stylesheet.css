@@ -398,6 +398,9 @@ main {
   transform: translateX(-50%);
   font-size: 42px !important;
   transition: color 0.4s ease-out;
+  width: 36px;
+  height: 42px;
+  fill: var(--white);
 }
 
 .link-tree a:hover {
@@ -406,6 +409,10 @@ main {
 
 .link-tree a:hover > i {
   color: rgb(255, 87, 34);
+}
+
+.link-tree a:hover > svg {
+  fill: rgb(255, 87, 34);
 }
 
 .container-one {
@@ -658,6 +665,30 @@ hr {
 
 .city {
   color: #dc2f2f;
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.picture-wrapper {
+  max-width: 31.25rem;
+  /* min-width: 10rem;
+  min-height: 10rem; */
+  /* margin: 3.5rem 1.5rem 1.5rem 1.5rem; */
+  margin: 0 1.5rem 0 1.5rem;
+  background-color: var(--charcoal);
+  box-shadow: var(--b-sh);
+}
+
+.picture__wall {
+  width: 400px;
+  height: 400px;
+  background-color: #dc2f2f;
 }
 
 .flexbox-quote {
