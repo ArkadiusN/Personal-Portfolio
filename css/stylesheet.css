@@ -516,6 +516,18 @@ main {
   transition: background-color 350ms linear, border 350ms linear;
 }
 
+.btn-two a {
+  display: inline;
+  color: var(--white);
+  font-family: var(--ff-sub);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+  border-radius: 5px;
+  width: 200px;
+  padding: 15px 0px 15px 0px;
+}
+
 .btn-two:hover {
   border: 1px solid var(--black);
   background-color: #ff5722;
@@ -819,6 +831,10 @@ hr {
   object-position: center top;
 }
 
+.image__five {
+  object-position: center top;
+}
+
 .signature {
   min-width: 100%;
   display: flex;
@@ -1095,7 +1111,8 @@ hr {
     width: 260px;
   }
 
-  .container-five__btn {
+  .container-five__btn,
+  .container-five__btn a {
     font-size: calc(12px + 0.3vw);
   }
 
