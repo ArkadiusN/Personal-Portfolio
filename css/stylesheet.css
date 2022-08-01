@@ -1202,13 +1202,54 @@ hr {
     left: -10px;
   }
 
+  .timeline {
+    position: absolute;
+    top: 175px;
+    right: -125px;
+    transform: rotate(90deg);
+    width: 200px;
+  }
+
+  .date {
+    font-family: var(--ff-sub);
+    text-align: center;
+    letter-spacing: 0.08rem;
+    font-size: 25px;
+    color: white;
+    font-weight: 800;
+  }
+
+  .date::before {
+    content: "";
+    width: 103px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    left: -270px;
+    margin: auto;
+  }
+
+  .date::after {
+    content: "";
+    width: 43px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    left: 180px;
+    margin: auto;
+  }
+
   .clapperboard {
     /* display: flex;
     flex-direction: column;
     align-items: center; */
     position: absolute;
     border-radius: 6px;
-    right: -22px;
+    right: -32px;
     bottom: -22px;
     width: 100px;
     height: 100px;
