@@ -97,7 +97,9 @@
           </div>
           <div class="container-five">
             <button class="container-five__btn btn-one">Download CV</button>
-            <button class="container-five__btn btn-two"><a href="#projects">My Work</a></button>
+            <a href="#projects">
+              <button class="container-five__btn btn-two">My Work</button>
+            </a>
           </div>
         </div>
         <div class="link-tree">
@@ -249,12 +251,9 @@
             has to stay private to get the encrypted data back in it&#39;s initial form.
           </p>
           <p class="item__button">
-            <a class="button-link" href="add link to github once you add this project">View here</a>
+            <a class="button-link" href="https://github.com/ArkadiusN/RSA-algorithm">View here</a>
           </p>
         </div>
-
-
-
       </div>
       <div class="flexbox-quote flexbox-quote--two">
         <div class="flexbox-quote-container">
@@ -262,6 +261,28 @@
         </div>
       </div>
     </section>
+
+    <section class="section section--end" id="form">
+      <form id="contact-form" class="contact-form">
+        <fieldset class="main-fieldset">
+
+          <div class="fields upper-fields">
+            <input id="firstName" name="firstName" type="text" placeholder="First Name" required>
+            <input id="lastName" name="lastName" type="text" placeholder="Last Name">
+          </div>
+
+          <div class="fields lower-fields">
+            <input id="email" name="email" type="email" placeholder="Email" autocomplete="off" required>
+            <input id="tel" name="tel" type="tel" placeholder="Phone" autocomplete="off" required>
+          </div>
+
+          <input id="message" name="message" placeholder="Type your message here">
+          <input id="submit" type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </section>
+
+
     <div class="footer">
       <p class="footer__text" id="footer-text"></p>
       <a class="footer__link" href="https://github.com/ArkadiusN"><i class="fa footer-icon">&#xf09b;</i>My GitHub</a>

@@ -946,6 +946,47 @@ hr {
   }
 }
 
+.section--end {
+  background-color: #362222;
+  position: relative;
+}
+
+/* ################################################################ */
+/*                         ################                         */
+/*                         ################                         */
+/* ########################  FORM SECTION  ######################## */
+
+.contact-form {
+  background-color: var(--black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-fieldset {
+  border: none;
+  height: 500px;
+}
+
+.fields {
+  display: inline-block;
+  text-align: center;
+}
+
+.upper-fields,
+.lower-fields {
+  display: block;
+}
+
+#message,
+#submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 /* ################################################################ */
 /*                         ################                         */
 /*                         ################                         */
