@@ -947,7 +947,7 @@ hr {
 }
 
 .section--end {
-  background-color: #362222;
+  background-color: #331818;
   position: relative;
 }
 
@@ -962,9 +962,15 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 650px;
 }
 
 .main-fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   border: none;
   height: 500px;
 }
@@ -972,11 +978,20 @@ hr {
 .fields {
   display: inline-block;
   text-align: center;
+  font-size: 0;
 }
 
 .upper-fields,
 .lower-fields {
   display: block;
+}
+
+#firstName,
+#lastName,
+#email,
+#tel {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 #message,
@@ -985,6 +1000,53 @@ hr {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+input::placeholder {
+  padding-left: 20px;
+  font-size: 17px;
+  color: var(--black);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  font-family: var(--ff-sub);
+  border: none;
+  border-radius: 10px;
+  width: 220px;
+  height: 50px;
+  background-color: #ff5722;
+}
+
+#message {
+  font-family: var(--ff-sub);
+  text-align: left;
+  border: none;
+  resize: none;
+  border-radius: 10px;
+  width: 456px;
+  height: 75px;
+  background-color: #ff5722;
+}
+
+#message::placeholder {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 17px;
+  color: var(--black);
+}
+
+input[type="submit"] {
+  font-family: var(--ff-sub);
+  font-size: 17px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  width: 140px;
+  height: 45px;
+  background-color: #ff5722;
+  color: var(--white);
 }
 
 /* ################################################################ */
