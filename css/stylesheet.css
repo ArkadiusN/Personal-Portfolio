@@ -763,7 +763,7 @@ hr {
   justify-content: center;
   background-color: var(--charcoal);
   box-shadow: var(--b-sh);
-  min-height: 500px;
+  height: 480px;
 }
 
 .project-container {
@@ -779,6 +779,7 @@ hr {
 }
 
 .item__description {
+  height: 150px;
   align-self: flex-start;
   color: var(--white);
   font-family: var(--ff-sub);
@@ -787,7 +788,7 @@ hr {
   line-height: 1.1rem; */
   line-height: 1.3rem;
   letter-spacing: 0.045rem;
-  padding: 1rem 2.5rem 1rem 2.5rem;
+  padding: 0 2.5rem 0 2.5rem;
   text-align: center;
 }
 
@@ -804,9 +805,26 @@ hr {
 }
 
 .item__button {
-  align-self: flex-end;
-  padding: 2em 0em 2em 0em;
-  text-align: center;
+  position: relative;
+  height: 50px;
+}
+
+.item__button a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.language {
+  clip-path: polygon(0 0, 75% 1%, 100% 25%, 100% 100%, 0 100%, 0% 50%);
+  width: 30px;
+  height: 30px;
+}
+
+.language-two {
+  width: 35px;
+  height: 35px;
 }
 
 .button-link {
@@ -1549,7 +1567,7 @@ input:-webkit-autofill:focus {
   }
 
   .grid-item-4 {
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3; */
   }
 }
 
