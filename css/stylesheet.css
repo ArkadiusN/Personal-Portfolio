@@ -792,14 +792,6 @@ hr {
   text-align: center;
 }
 
-.javascript {
-  color: #f7df1e;
-}
-
-.html {
-  color: #e34c26;
-}
-
 .p5 {
   color: #ed225d;
 }
@@ -823,8 +815,8 @@ hr {
 }
 
 .language-two {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .button-link {
@@ -843,14 +835,6 @@ hr {
 
 .image__three {
   object-position: center;
-}
-
-.java {
-  color: #5382a1;
-}
-
-.swing {
-  color: #ed1d25;
 }
 
 .image__four {
