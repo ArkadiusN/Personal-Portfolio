@@ -1,6 +1,6 @@
 var root = document.querySelector(":root");
 var toggle = document.querySelector(".switch");
-var checkbox = document.querySelector(".checkbox");
+var checkbox = document.querySelector(".switch__checkbox");
 
 // Instead of changing the root variables
 // create a $vars in stylesheet and then another one
@@ -13,10 +13,12 @@ toggle.addEventListener("change", () => {
     root.style.setProperty("--dark-purple", "#362222");
     root.style.setProperty("--navy", "#171010");
     root.style.setProperty("--orange", "#423F3E");
+    root.style.setProperty("--white", "#D7D7D7");
   } else {
     console.log("Unchecked");
     root.style.setProperty("--dark-purple", "#222831");
     root.style.setProperty("--navy", "#2d4059");
     root.style.setProperty("--orange", " #ff5722");
+    root.style.setProperty("--white", "#ffffff");
   }
 });

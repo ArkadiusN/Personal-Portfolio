@@ -70,6 +70,9 @@ html {
 
   /* Box shadow */
   --b-sh: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  /* Transition */
+  --tr-darkMode: color 560ms ease-in-out, border-color 560ms ease-in-out;
 }
 
 *,
@@ -167,6 +170,7 @@ main {
 .right-side__link {
   color: var(--white) !important;
   margin-right: 3rem;
+  /* transition: var(--tr-darkMode); */
 }
 
 .github-icon {
@@ -325,7 +329,7 @@ main {
 .bar3 {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: var(--white);
   margin: 5px 0;
   transition: 0.3s ease-in;
 }
@@ -451,11 +455,12 @@ main {
 }
 
 .container-three__text {
-  color: white;
+  color: var(--white);
   font-family: var(--ff-sub);
   font-weight: var(--fw-b);
   font-size: 55px;
   padding: 18px 7px 10px 7px;
+  transition: var(--tr-darkMode);
 }
 
 .container-three__dot,
@@ -475,11 +480,12 @@ main {
 }
 
 .container-four__about {
-  color: white;
+  color: var(--white);
   font-family: var(--ff-sub);
   font-size: 14px;
   letter-spacing: 0.1rem;
   padding: 10px;
+  transition: var(--tr-darkMode);
 }
 
 .container-five {
@@ -500,6 +506,7 @@ main {
   border-radius: 5px;
   width: 200px;
   padding: 15px 0px 15px 0px;
+  transition: var(--tr-darkMode);
 }
 
 .btn-one {
@@ -507,7 +514,8 @@ main {
   border: 1px solid var(--black);
   background-color: #ff5722;
   margin-right: 5px;
-  transition: background-color 350ms linear, border 350ms linear;
+  /* transition: background-color 350ms linear, border 350ms linear; */
+  transition: var(--tr-darkMode);
 }
 
 .btn-one:hover {
@@ -517,10 +525,11 @@ main {
 
 .btn-two {
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid var(--white);
   background-color: var(--black);
   margin-left: 5px;
-  transition: background-color 350ms linear, border 350ms linear;
+  transition: background-color 350ms linear, border 350ms linear,
+    var(--tr-darkMode);
 }
 
 .btn-two a {
@@ -674,6 +683,7 @@ hr {
   line-height: 1.9rem;
   padding: 0 1.75rem 3.375rem 1.75rem; /* was 2.5 left and right*/
   text-align: center;
+  transition: var(--tr-darkMode);
 }
 
 .fullname {
@@ -725,8 +735,9 @@ hr {
 .text__one,
 .text__two,
 .text__three {
-  color: white;
-  border-color: white;
+  color: var(--white);
+  border-color: var(--white);
+  transition: var(--tr-darkMode);
 }
 
 /* ################################################################ */
@@ -747,6 +758,7 @@ hr {
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
+  transition: var(--tr-darkMode);
 }
 
 .card-grid {
@@ -790,6 +802,7 @@ hr {
   letter-spacing: 0.045rem;
   padding: 0 2.5rem 0 2.5rem;
   text-align: center;
+  transition: var(--tr-darkMode);
 }
 
 .p5 {
@@ -944,6 +957,7 @@ hr {
 
 .material-icons {
   color: var(--white);
+  transition: var(--tr-darkMode);
 }
 
 @keyframes page-load {
@@ -1002,6 +1016,7 @@ legend {
   margin-bottom: 10px;
   margin-left: -12px;
   padding: 0 30px 0 30px;
+  transition: var(--tr-darkMode);
 }
 
 /* .form-Input_Wrapper + .form-Input_Wrapper {
@@ -1086,6 +1101,7 @@ input:-webkit-autofill:focus {
   height: 45px;
   background-color: #739328;
   color: var(--white);
+  transition: var(--tr-darkMode);
 }
 
 .flexbox-quote--three {
