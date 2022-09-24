@@ -13,7 +13,8 @@ toggle.addEventListener("change", () => {
     root.style.setProperty("--dark-purple", "#362222");
     root.style.setProperty("--navy", "#171010");
     root.style.setProperty("--orange", "#423F3E");
-    root.style.setProperty("--white", "#D7D7D7");
+    // root.style.setProperty("--white", "#D7D7D7");
+    root.style.setProperty("--white", "#000fff");
   } else {
     console.log("Unchecked");
     root.style.setProperty("--dark-purple", "#222831");

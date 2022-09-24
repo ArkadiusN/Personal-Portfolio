@@ -495,18 +495,10 @@ main {
   /* background-color: coral; */
 }
 
-.container-five__btn,
-.container-five__btn a {
-  display: inline;
-  color: var(--white) !important;
-  font-family: var(--ff-sub);
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 0.05rem;
+.container-five__btn {
   border-radius: 5px;
   width: 200px;
   padding: 15px 0px 15px 0px;
-  transition: var(--tr-darkMode);
 }
 
 .btn-one {
@@ -514,8 +506,7 @@ main {
   border: 1px solid var(--black);
   background-color: #ff5722;
   margin-right: 5px;
-  /* transition: background-color 350ms linear, border 350ms linear; */
-  transition: var(--tr-darkMode);
+  transition: background-color 350ms linear, border 350ms linear;
 }
 
 .btn-one:hover {
@@ -528,11 +519,11 @@ main {
   border: 1px solid var(--white);
   background-color: var(--black);
   margin-left: 5px;
-  transition: background-color 350ms linear, border 350ms linear,
-    var(--tr-darkMode);
+  transition: background-color 350ms linear, border 350ms linear;
 }
 
-.btn-two a {
+.none1,
+.none2 {
   display: inline;
   color: var(--white);
   font-family: var(--ff-sub);
@@ -542,6 +533,7 @@ main {
   border-radius: 5px;
   width: 200px;
   padding: 15px 0px 15px 0px;
+  transition: 1s;
 }
 
 .btn-two:hover {
@@ -564,6 +556,10 @@ main {
   text-align: center;
   color: rgb(255, 87, 34);
   font-size: 30px;
+}
+
+.darkModeReading {
+  transition: var(--tr-darkMode);
 }
 
 /* ################################################################ */
