@@ -4,26 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "Alex";
-  src: url("/fonts/AlexBrush-Regular.ttf");
-}
-
-@font-face {
-  font-family: "AntroBold";
-  src: url("/fonts/Antro_Vectra_Bolder.otf");
-}
-
-@font-face {
-  font-family: "Antro";
-  src: url("/fonts/Antro_Vectra.otf");
-}
-
-@font-face {
-  font-family: "Halimun";
-  src: url("/fonts/Halimun.ttf");
-}
-
 :root {
   /* --black: #000000;
   --bright-red: #ff0400;
@@ -51,7 +31,6 @@ html {
   /* Font Families */
   --ff-main: "Montserrat", sans-serif;
   --ff-sub: "Epilogue", sans-serif;
-  --ff-sign: "Alex";
 
   /* Font Weights */
   --fw-r: 400;
@@ -222,8 +201,7 @@ main {
 }
 
 .link__project::after,
-.link__about-me::after,
-.link__contact::after {
+.link__about-me::after {
   content: "";
   position: absolute;
   left: 32px;
@@ -243,11 +221,6 @@ main {
 
 .link__project:hover::after {
   width: 37px;
-  transform: scaleX(2.5) translate(0px, -30px);
-}
-
-.link__contact:hover::after {
-  width: 35px;
   transform: scaleX(2.5) translate(0px, -30px);
 }
 
@@ -682,11 +655,10 @@ hr {
   transition: var(--tr-darkMode);
 }
 
-.fullname {
-  font-family: AntroBold;
-  font-size: 19px;
+/* .fullname {
+  font-size: 15px;
   color: #ffff00;
-}
+} */
 
 .city {
   color: #dc2f2f;
@@ -698,7 +670,7 @@ hr {
 
 .flexbox-quote {
   width: 100%;
-  height: 20vh;
+  height: 35vh;
   background-size: cover;
   background-position: 0%;
 }
@@ -729,8 +701,7 @@ hr {
 }
 
 .text__one,
-.text__two,
-.text__three {
+.text__two {
   color: var(--white);
   border-color: var(--white);
   transition: var(--tr-darkMode);
@@ -974,139 +945,6 @@ hr {
 /* ################################################################ */
 /*                         ################                         */
 /*                         ################                         */
-/* ########################  FORM SECTION  ######################## */
-
-/* .contact-form {
-  background-color: var(--black);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 650px;
-} */
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 80vh;
-  padding: 10px;
-  margin-right: 25px;
-  margin-left: 25px;
-}
-
-.main-fieldset {
-  background-color: var(--black);
-  padding: 20px 30px 60px 30px;
-  border: none;
-}
-
-legend {
-  background-color: var(--black);
-  border: 4px solid #ff4f00;
-  border-radius: 5px;
-  font-family: var(--ff-main);
-  font-weight: 600;
-  font-size: 27px;
-  color: var(--white);
-  margin-bottom: 10px;
-  margin-left: -12px;
-  padding: 0 30px 0 30px;
-  transition: var(--tr-darkMode);
-}
-
-/* .form-Input_Wrapper + .form-Input_Wrapper {
-  margin-top: 10px;
-} */
-
-.form-Input_Wrapper {
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  flex-direction: column;
-}
-
-#firstName,
-#lastName,
-#email,
-#tel {
-  position: relative;
-  margin-bottom: 10px;
-  font-family: var(--ff-sub);
-  font-size: 17px;
-  min-height: 50px;
-  padding-left: 20px;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  background-color: #ff5722;
-  caret-color: var(--black);
-}
-
-#email {
-  font-size: 14px;
-}
-
-#firstName::placeholder,
-#lastName::placeholder,
-#email::placeholder,
-#tel::placeholder {
-  padding-left: 2px;
-  font-family: var(--ff-sub);
-  font-size: 17px;
-  color: var(--black);
-}
-
-#message {
-  margin-top: 15px;
-  font-family: var(--ff-sub);
-  font-size: 17px;
-  padding: 15px;
-  margin-bottom: 5px;
-  text-align: left;
-  outline: none;
-  border: none;
-  resize: none;
-  border-radius: 10px;
-  min-height: 75px;
-  background-color: #ff5722;
-  caret-color: var(--black);
-}
-
-#message::placeholder {
-  padding-left: 2px;
-  font-family: var(--ff-sub);
-  font-size: 17px;
-  color: var(--black);
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--white);
-  -webkit-box-shadow: 0 0 0px 1000px #292a2d inset;
-}
-
-.submit-Form_Button {
-  font-family: var(--ff-sub);
-  font-size: 17px;
-  border: none;
-  border-radius: 50px;
-  margin-top: 10px;
-  width: 140px;
-  height: 45px;
-  background-color: #739328;
-  color: var(--white);
-  transition: var(--tr-darkMode);
-}
-
-.flexbox-quote--three {
-  background-image: url(/img/projects-background.png);
-  transition: background-image 500ms linear;
-}
-/* ################################################################ */
-/*                         ################                         */
-/*                         ################                         */
 /* ######################### MEDIA QUERIES ######################## */
 
 @media (max-width: 324px) {
@@ -1120,30 +958,6 @@ input:-webkit-autofill:focus {
 
   .card-grid {
     padding: 0 1.5rem 0 1.5rem;
-  }
-
-  .contact-form {
-    margin: 0 auto;
-  }
-
-  #firstName,
-  #lastName,
-  #email,
-  #tel,
-  #message {
-    font-size: 14px;
-  }
-
-  #message {
-    padding: 10px;
-  }
-
-  #firstName::placeholder,
-  #lastName::placeholder,
-  #email::placeholder,
-  #tel::placeholder,
-  #message::placeholder {
-    font-size: 14px;
   }
 }
 
@@ -1159,7 +973,7 @@ input:-webkit-autofill:focus {
 
 @media (min-width: 530px) {
   .flexbox-quote--two {
-    background-image: url(/img/contact-background-two.png);
+    background-image: url(/img/project-background-two.png);
   }
 }
 
@@ -1168,35 +982,6 @@ input:-webkit-autofill:focus {
     background-image: url(/img/about-background-two.png);
   }
 }
-
-/* @media (max-width: 675px) {
-  .contact-form {
-    width: 400px;
-  }
-
-  .main-fieldset {
-    gap: 0px;
-  }
-
-  #firstName,
-  #lastName,
-  #email {
-    margin-bottom: 15px;
-  }
-
-  #tel {
-    margin-bottom: 30px;
-  }
-
-  #message {
-    width: 350px;
-    margin-bottom: 15px;
-  }
-
-  #submit {
-    margin-top: 0px;
-  }
-} */
 
 @media (min-width: 768px) {
   .header__logo {
@@ -1236,8 +1021,7 @@ input:-webkit-autofill:focus {
     background-color: #ff5722;
   }
 
-  .line-navbar-two,
-  .line-navbar-three {
+  .line-navbar-two {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1531,23 +1315,6 @@ input:-webkit-autofill:focus {
   }
 }
 
-@media (min-width: 800px) {
-  .contact-form {
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
-  .main-fieldset {
-    padding: 20px 30px 60px 30px;
-  }
-}
-
-@media (min-width: 930px) {
-  .flexbox-quote--three {
-    background-image: url(/img/project-background-two.png);
-  }
-}
-
 @media (min-width: 960px) {
   .about__header {
     padding: 3.375rem 2.5rem 0 2.5rem;
@@ -1560,10 +1327,6 @@ input:-webkit-autofill:focus {
   .picture-wrapper {
     height: 400px;
     width: 400px;
-  }
-
-  .grid-item-4 {
-    /* grid-column: 2 / 3; */
   }
 }
 
