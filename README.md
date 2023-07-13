@@ -14,10 +14,31 @@ Additionally, I have also utilized various online resources such as W3Schools an
 
 #### Contents
 - **[1 About the website](#2-about-the-website)**
+- **[2 Results](#2-results)**
+  - [2.1 Home section](#21-home-section)
+  - [2.2 About section](#22-about-section)
+  - [2.3 Project section](#23-project-section)
+  - [2.4 Phone version](#24-phone-version)
 
 
 ## 1 About the website
+The website is...
 
+<sub>[[Top 🢁](#contents)]</sub>
+
+## 2 Results
+
+### 2.1 Home section
+<img src="img/HomePage.PNG" style="border: 2px solid #181414"/>
+
+### 2.2 About section
+<img src="img/AboutPage.PNG" style="border: 2px solid #181414"/>
+
+### 2.3 Project section
+<img src="img/ProjectsPage.PNG" style="border: 2px solid #181414"/>
+
+### 2.4 Phone version
+<img src="img/PhoneVersionPage.PNG" style="border: 2px solid #181414"/>
 
 <sub>[[Top 🢁](#contents)]</sub>
 
