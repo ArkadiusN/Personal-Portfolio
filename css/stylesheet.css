@@ -550,10 +550,6 @@ main {
   min-height: 80vh;
 }
 
-.flexbox-mid-inner {
-  min-height: 80vh;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -563,7 +559,7 @@ main {
 }
 
 .about-wrapper {
-  max-width: 31.25rem;
+  max-width: 36rem;
   /* margin: 3.5rem 1.5rem 1.5rem 1.5rem; */
   margin: 0 1.5rem 0 1.5rem;
   background-color: var(--charcoal);
@@ -619,7 +615,7 @@ hr {
   margin-right: 1.875rem;
 }
 
-.flex-headshot-container {
+/* .flex-headshot-container {
   display: flex;
   justify-content: center;
   margin: 0.85rem 0 0.85rem 0;
@@ -627,9 +623,9 @@ hr {
 
 .flex-headshot-outline {
   align-items: center;
-  border-radius: 50%;
-  border: 4px solid #ff4f00; /* #f45905 */
-  display: flex;
+  border-radius: 50%; */
+  /* border: 4px solid #ff4f00; /* #f45905 */
+  /* display: flex;
   height: 110px;
   justify-content: center;
   width: 110px;
@@ -641,7 +637,7 @@ hr {
   object-fit: cover;
   object-position: center 25%;
   width: 85px;
-}
+} */ 
 
 .about__details {
   color: var(--white);
@@ -664,9 +660,9 @@ hr {
   color: #dc2f2f;
 }
 
-.picture {
+/* .picture {
   display: none;
-}
+} */
 
 .flexbox-quote {
   width: 100%;
@@ -1173,21 +1169,21 @@ hr {
     align-items: center;
   }
 
-  .picture-wrapper {
+  /* .picture-wrapper {
     position: relative;
     width: 300px;
     height: 300px;
     background: #2b2b2b;
     margin: 0 1.5rem 0 1.5rem;
-  }
-
+  } */
+/* 
   .picture-tint {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* opacity: 0; */
-  }
-
+    opacity: 0;
+  } */
+/* 
   .picture__wall {
     border-radius: 7px;
     object-fit: cover;
@@ -1213,9 +1209,9 @@ hr {
     position: absolute;
     top: -10px;
     left: -10px;
-  }
+  } */
 
-  .timeline {
+  /* .timeline {
     position: absolute;
     top: 175px;
     right: -125px;
@@ -1254,22 +1250,22 @@ hr {
     right: 0;
     left: 180px;
     margin: auto;
-  }
-
-  .clapperboard {
+  } */
+/* 
+  .clapperboard { */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
-    position: absolute;
+    /* position: absolute;
     border-radius: 6px;
     right: -32px;
     bottom: -22px;
     width: 100px;
     height: 100px;
     background: var(--black);
-  }
+  } */
 
-  .decoration {
+  /* .decoration {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1290,7 +1286,7 @@ hr {
     padding: 0 20px 0 20px;
     color: white;
     font-weight: 900;
-  }
+  } */
 
   .project-title {
     font-size: 45px;
