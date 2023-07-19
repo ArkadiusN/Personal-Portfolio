@@ -656,9 +656,137 @@ hr {
   color: #ffff00;
 } */
 
+.degree {
+  color: var(--orange);
+}
+
+.book {
+  color: #3a96dd
+}
+
 .city {
   color: #dc2f2f;
 }
+
+/* Timeline Container */
+.timeline {
+  padding: 20px;
+  box-sizing: initial;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+/* Card container */
+.card {
+  position: relative;
+  max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid var(--bright-red);
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+@media only screen and (max-width: 400px) {
+  .card:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
+  }
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: -1px;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: var(--charcoal);
+  color: var(--white);
+  font-family: var(--ff-main);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: var(--bright-red);
+  font-family: var(--ff-sub);
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid var(--bright-red);
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+
 
 /* .picture {
   display: none;
@@ -1169,125 +1297,6 @@ hr {
     align-items: center;
   }
 
-  /* .picture-wrapper {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background: #2b2b2b;
-    margin: 0 1.5rem 0 1.5rem;
-  } */
-/* 
-  .picture-tint {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-  } */
-/* 
-  .picture__wall {
-    border-radius: 7px;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    filter: grayscale(1);
-  }
-  .pin-head {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(27, 27, 27);
-    border-radius: 50px;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-  }
-
-  .pin {
-    width: 30px;
-    height: 30px;
-    background-color: var(--black);
-    border-radius: 50px;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-  } */
-
-  /* .timeline {
-    position: absolute;
-    top: 175px;
-    right: -125px;
-    transform: rotate(90deg);
-    width: 200px;
-  }
-
-  .date {
-    font-family: var(--ff-sub);
-    text-align: center;
-    letter-spacing: 0.08rem;
-    font-size: 25px;
-    color: white;
-    font-weight: 800;
-  }
-
-  .date::before {
-    content: "";
-    width: 103px;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    top: 12px;
-    right: 0;
-    left: -270px;
-    margin: auto;
-  }
-
-  .date::after {
-    content: "";
-    width: 43px;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    top: 12px;
-    right: 0;
-    left: 180px;
-    margin: auto;
-  } */
-/* 
-  .clapperboard { */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* position: absolute;
-    border-radius: 6px;
-    right: -32px;
-    bottom: -22px;
-    width: 100px;
-    height: 100px;
-    background: var(--black);
-  } */
-
-  /* .decoration {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 20px;
-  }
-
-  .line {
-    width: 8px;
-    height: 16px;
-    background-color: white;
-  }
-
-  .clapperboard__text {
-    font-size: var(--ff-sub);
-    letter-spacing: 0.04rem;
-    font-size: 15px;
-    padding: 0 20px 0 20px;
-    color: white;
-    font-weight: 900;
-  } */
-
   .project-title {
     font-size: 45px;
   }
@@ -1323,13 +1332,6 @@ hr {
   .picture-wrapper {
     height: 400px;
     width: 400px;
-  }
-}
-
-@media (max-width: 1045px) {
-  .timeline,
-  .clapperboard {
-    display: none;
   }
 }
 
