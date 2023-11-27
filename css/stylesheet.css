@@ -274,7 +274,7 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .button::before {
@@ -410,6 +410,7 @@ main {
   font-weight: 500;
   font-size: 14px;
   padding: 10px 35px 10px 35px;
+  transition: 1.5s;
 }
 
 .container-two {
@@ -434,6 +435,7 @@ main {
   font-size: 55px;
   padding: 18px 7px 10px 7px;
   transition: var(--tr-darkMode);
+  transition: 1.5s;
 }
 
 .container-three__dot,
@@ -459,6 +461,7 @@ main {
   letter-spacing: 0.1rem;
   padding: 10px;
   transition: var(--tr-darkMode);
+  transition: 1.5s;
 }
 
 .container-five {
@@ -506,7 +509,7 @@ main {
   border-radius: 5px;
   width: 200px;
   padding: 15px 0px 15px 0px;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .btn-two:hover {
@@ -603,6 +606,7 @@ main {
   letter-spacing: 0.075rem;
   padding: 3.375rem 2.5rem 0 2.5rem;
   text-align: center;
+  transition: 1.5s;
 }
 
 hr {
@@ -649,6 +653,7 @@ hr {
   padding: 0 1.75rem 3.375rem 1.75rem; /* was 2.5 left and right*/
   text-align: center;
   transition: var(--tr-darkMode);
+  transition: 1.5s;
 }
 
 /* .fullname {
@@ -675,7 +680,6 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 /* Card container */
@@ -752,6 +756,11 @@ hr {
   font-family: var(--ff-main);
   border-radius: 10px;
   padding: 10px;
+}
+
+.timeline__text{
+  font-size: 13px;
+  transition: 1.5s;
 }
 
 /* Title of the card */
@@ -850,6 +859,7 @@ hr {
   padding-bottom: 3rem;
   text-align: center;
   transition: var(--tr-darkMode);
+  transition: 1.5s;
 }
 
 .card-grid {
@@ -894,6 +904,7 @@ hr {
   padding: 0 2.5rem 0 2.5rem;
   text-align: center;
   transition: var(--tr-darkMode);
+  transition: 1.5s;
 }
 
 .p5 {
@@ -931,6 +942,7 @@ hr {
   font-size: 13px;
   font-weight: 500;
   padding: 0.625rem;
+  transition: 1.5s;
 }
 
 .app-title {
@@ -1116,6 +1128,14 @@ hr {
 
   .right-side__link {
     display: none;
+  }
+
+  .timeline {
+    flex-direction: column;
+  }
+
+  .timeline__text{
+    font-size: 15px;
   }
 
   .link-tree {
