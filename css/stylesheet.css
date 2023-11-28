@@ -5,17 +5,6 @@ html {
 }
 
 :root {
-  /* --black: #000000;
-  --bright-red: #ff0400;
-  --charcoal: #202022;
-  --dark-orange: #f45905;
-  --dark-purple: #222831;
-  --light-orange: #ffaf4f;
-  --navy: #2d4059;
-  --orange: #ff5722;
-  --red: #dc2f2f;
-  --white: #ffffff; */
-
   /* Color schemes */
   --black: #000000;
   --bright-red: #ff4f00;
@@ -47,11 +36,8 @@ html {
   --fs-3: 2.5rem;
   --fs-4: 2.8rem;
 
-  /* Box shadow */
-  --b-sh: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
-  /* Transition */
-  --tr-darkMode: color 560ms ease-in-out, border-color 560ms ease-in-out;
+  --b-sh: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); /* Box shadow */
+  --tr-darkMode: color 560ms ease-in-out, border-color 560ms ease-in-out;       /* Transition */
 }
 
 *,
@@ -64,39 +50,24 @@ a {
   text-decoration: none;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+body, h1, h2, h3, h4, h5, h6, p {
   font-size: var(--fs-def); /*You'll want to set font-size as needed.*/
   font-weight: var(--fw-r); /*No bold for h tags unless you want it*/
-  margin: 0; /*We will be adding our own margin to these elements as needed.*/
+  margin: 0;                /*We will be adding our own margin to these elements as needed.*/
 }
 
 img {
-  /*Make images behave responsively. Here they will scale up to 100% of their natural size*/
-  max-width: 100%;
-  /*Make images display as a block (UA default is usually inline)*/
-  display: block;
+  max-width: 100%;  /*Make images behave responsively. Here they will scale up to 100% of their natural size*/
+  display: block;   /*Make images display as a block (UA default is usually inline)*/
 }
 
 /*Set a default non-variable font but then enhance if the browser supports a variable font*/
 body {
-  /* border-bottom: 5px solid #ff4f00;
-  border-top: 5px solid #ff4f00; */
   font-family: Inter, sans-serif;
-  /* background-color: orange; */
 }
 
 main {
   height: 100vh;
-  /* overflow: scroll; */
-  /* scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; */
 }
 
 ::-webkit-scrollbar {
@@ -149,7 +120,6 @@ main {
 .right-side__link {
   color: var(--white) !important;
   margin-right: 3rem;
-  /* transition: var(--tr-darkMode); */
 }
 
 .github-icon {
@@ -324,28 +294,19 @@ main {
 /* ########################  TOP SECTION  ######################## */
 .section {
   min-height: 100vh;
-  /* scroll-snap-align: start; */
 }
 
 .section--top {
   background-color: #ff4f00;
-  /* background-image: url(/img/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: calc(100vh - 181px); */
-  /* 100vh - height of navbar*/
-
-  /* Use previous one for old styling ot */
-
   min-height: calc(100vh - 100.5px);
 }
 
 .flexbox-outer {
   min-height: calc(100vh - 10vh);
-  background-color: var(--black); /* #333333 or #393939 also works */
+  background-color: var(--black);   /*#333333 or #393939 also works */
   border-bottom: 1px solid rgb(255, 87, 34);
   display: flex;
-  flex-direction: row; /* was column */
+  flex-direction: row;              /* was column */
   justify-content: center;
   align-items: center;
 }
@@ -357,7 +318,6 @@ main {
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
-  /* background-color: purple; */
 }
 
 .link-tree {
@@ -385,12 +345,6 @@ main {
   height: 42px;
   fill: var(--white);
 }
-
-.tree_icon__aws{
-  width: 78px;
-  height: 78px;
-}
-
 
 .link-tree a:hover {
   background-color: var(--black);
@@ -455,9 +409,7 @@ main {
 }
 
 .container-four {
-  /* display: inline-block; */
   align-self: flex-start;
-  /* background-color: peachpuff; */
 }
 
 .container-four__about {
@@ -474,7 +426,6 @@ main {
   align-self: flex-start;
   padding: 10px;
   font-size: 0;
-  /* background-color: coral; */
 }
 
 .container-five__btn {
@@ -548,7 +499,6 @@ main {
 /*                         ################                         */
 /*                         ################                         */
 /* ######################## MIDDLE SECTION ######################## */
-
 .section--mid {
   background-color: #2b2b2b;
 }
@@ -569,7 +519,6 @@ main {
 
 .about-wrapper {
   max-width: 36rem;
-  /* margin: 3.5rem 1.5rem 1.5rem 1.5rem; */
   margin: 0 1.5rem 0 1.5rem;
   background-color: var(--charcoal);
   box-shadow: var(--b-sh);
@@ -625,47 +574,18 @@ hr {
   margin-right: 1.875rem;
 }
 
-/* .flex-headshot-container {
-  display: flex;
-  justify-content: center;
-  margin: 0.85rem 0 0.85rem 0;
-}
-
-.flex-headshot-outline {
-  align-items: center;
-  border-radius: 50%; */
-  /* border: 4px solid #ff4f00; /* #f45905 */
-  /* display: flex;
-  height: 110px;
-  justify-content: center;
-  width: 110px;
-}
-
-.headshot__img {
-  border-radius: 50%;
-  height: 85px;
-  object-fit: cover;
-  object-position: center 25%;
-  width: 85px;
-} */ 
-
 .about__details {
   color: var(--white);
   font-family: var(--ff-main);
-  font-size: 13px; /*16*/
+  font-size: 13px;                     /*16*/
   font-weight: var(--fw-m);
   letter-spacing: 0.075rem;
   line-height: 1.9rem;
-  padding: 0 1.75rem 3.375rem 1.75rem; /* was 2.5 left and right*/
+  padding: 0 1.75rem 3.375rem 1.75rem; /*Was 2.5 left and right*/
   text-align: center;
   transition: var(--tr-darkMode);
   transition: 1.5s;
 }
-
-/* .fullname {
-  font-size: 15px;
-  color: #ffff00;
-} */
 
 .degree {
   color: var(--orange);
@@ -698,9 +618,11 @@ hr {
 .card:nth-child(odd) {
   padding: 30px 0 30px 30px;
 }
+
 .card:nth-child(even) {
   padding: 30px 30px 30px 0;
 }
+
 /* Global ::before */
 .card::before {
   content: "";
@@ -802,11 +724,6 @@ hr {
   right: -45px;
 }
 
-
-/* .picture {
-  display: none;
-} */
-
 .flexbox-quote {
   width: 100%;
   height: 35vh;
@@ -850,7 +767,6 @@ hr {
 /*                         ################                         */
 /*                         ################                         */
 /* ######################## BOTTOM SECTION ######################## */
-
 .section--bot {
   background-color: #362222;
 }
@@ -903,8 +819,6 @@ hr {
   color: var(--white);
   font-family: var(--ff-sub);
   font-size: 13px;
-  /* letter-spacing: 0.075rem;
-  line-height: 1.1rem; */
   line-height: 1.3rem;
   letter-spacing: 0.045rem;
   padding: 0 2.5rem 0 2.5rem;
@@ -1088,7 +1002,6 @@ hr {
 /*                         ################                         */
 /*                         ################                         */
 /* ######################### MEDIA QUERIES ######################## */
-
 @media (max-width: 324px) {
   .flexbox-inner {
     padding-right: 0;
@@ -1179,8 +1092,6 @@ hr {
 
   .line__link {
     padding: 1.5rem 1rem 1.5rem 1rem;
-    /* padding-left: 1rem;
-    padding-right: 1rem; */
     color: var(--white);
     font-family: var(--ff-sub);
     font-size: 19px;
@@ -1316,13 +1227,6 @@ hr {
     padding: 0 1.25rem 2.5rem 1.25rem;
   }
 
-  .picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .project-title {
     font-size: 45px;
   }
@@ -1353,11 +1257,6 @@ hr {
 
   .about__details {
     padding: 0 1.75rem 3.375rem 1.75rem;
-  }
-
-  .picture-wrapper {
-    height: 400px;
-    width: 400px;
   }
 }
 
