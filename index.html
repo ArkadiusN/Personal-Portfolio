@@ -1,339 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,800;1,700&display=swap"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <script defer src="js/welcome-message.js"></script>
-    <script defer src="js/scroll-top.js"></script>
-    <script defer src="js/date-object.js"></script>
-    <script defer src="js/transition-change.js"></script>
-    <script defer src="js/side-navbar.js"></script>
-    <script defer src="js/hamburger-click.js"></script>
-    <title>Portfolio</title>
-  </head>
 
-  <body>
-    <main>
-      <div class="nice">
-        <div class="signature">
-          <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
-          <h2 class="signature__title">Java Dev & Web passionate</h2>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,800;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script defer src="js/welcome-message.js"></script>
+  <script defer src="js/scroll-top.js"></script>
+  <script defer src="js/date-object.js"></script>
+  <script defer src="js/transition-change.js"></script>
+  <script defer src="js/side-navbar.js"></script>
+  <script defer src="js/hamburger-click.js"></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <main>
+    <div class="nice">
+      <div class="signature">
+        <h1 class="signature__fullname">Arkadiusz Nowacki</h1>
+        <h2 class="signature__title">Java Dev & Web passionate</h2>
       </div>
-      <header class="header">
-        <nav class="navbar">
-          <a href="/">
-            <img class="header__logo" src="img/logo2.svg" />
-          </a>
-          <div class="right-side">
-            <a class="right-side__link" href="https://github.com/ArkadiusN"><i class="fa github-icon">&#xf09b;</i></a>
-            <div class="side-navbar" id="sideNav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a class="link__about-me" href="#about">About</a>
-              <a class="link__project" href="#projects">Projects</a>
-              <a>
-                <label class="switch">
-                  <input class="switch__checkbox" type="checkbox" />
-                  <span class="switch__slider"></span> </label></a>
-            </div>
-            <div class="hamburger" onclick="hideOrShowNav()">
-              <div class="button" id="btt" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            </div>
-            <div class="line-navbar">
-              <div class="line-navbar-one">
-                <a class="line__link line__link-one" href="#about">About Me</a>
-              </div>
-              <div class="line-navbar-two">
-                <a class="line__link line__link-two" href="#projects">Projects</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <section class="section section--top">
-        <div class="flexbox-outer">
-          <div class="flexbox-inner">
-            <div class="container-one">
-              <p class="container-one__hello" id="welcome-message"></p>
-            </div>
-            <div class="container-two">
-              <p class="container-two__triangle"></p>
-            </div>
-            <div class="container-three">
-              <h1 class="container-three__text">
-                Mr<span class="container-three__dot">.</span><span class="container-three__fullname">Arkadiusz</span>
-                Nowacki
-              </h1>
-            </div>
-            <div class="container-four">
-              <h3 class="container-four__about">
-                Java Dev
-                <span class="container-four__ampersand">&</span>
-                Web passionate
-              </h3>
-            </div>
-            <div class="container-five">
-              <button class="container-five__btn btn-one">
-                <a class="none1" href="files/CV Arkadiusz Nowacki.docx">Download CV</a>
-              </button>
-              <button class="container-five__btn btn-two">
-                <a class="none2" href="#projects">My Work</a>
-              </button>
-            </div>
-          </div>
-          <div class="link-tree">
-            <a class="link-tree__link" href="https://github.com/ArkadiusN"><i class="fa tree-icon">&#xf09b;</i></a>
-            <a class="link-tree__link"
-              href="https://www.credly.com/badges/66e11de9-ae65-409d-948a-3ba23d37966e/public_url"><svg
-                xmlns="http://www.w3.org/2000/svg" class="tree-icon" height="16" width="20" viewBox="0 0 640 512">
-                <path
-                  d="M180.4 203c-.7 22.7 10.6 32.7 10.9 39.1a8.2 8.2 0 0 1 -4.1 6.3l-12.8 9a10.7 10.7 0 0 1 -5.6 1.9c-.4 0-8.2 1.8-20.5-25.6a78.6 78.6 0 0 1 -62.6 29.5c-16.3 .9-60.4-9.2-58.1-56.2-1.6-38.3 34.1-62.1 70.9-60.1 7.1 0 21.6 .4 47 6.3v-15.6c2.7-26.5-14.7-47-44.8-43.9-2.4 0-19.4-.5-45.8 10.1-7.4 3.4-8.3 2.8-10.8 2.8-7.4 0-4.4-21.5-2.9-24.2 5.2-6.4 35.9-18.4 65.9-18.2a76.9 76.9 0 0 1 55.7 17.3 70.3 70.3 0 0 1 17.7 52.4l0 69.3zM94 235.4c32.4-.5 46.2-20 49.3-30.5 2.5-10.1 2.1-16.4 2.1-27.4-9.7-2.3-23.6-4.9-39.6-4.9-15.2-1.1-42.8 5.6-41.7 32.3-1.2 16.8 11.1 31.4 30 30.5zm170.9 23.1c-7.9 .7-11.5-4.9-12.7-10.4l-49.8-164.7c-1-2.8-1.6-5.7-1.9-8.6a4.6 4.6 0 0 1 3.9-5.3c.2 0-2.1 0 22.3 0 8.8-.9 11.6 6 12.6 10.4l35.7 140.8 33.2-140.8c.5-3.2 2.9-11.1 12.8-10.2h17.2c2.2-.2 11.1-.5 12.7 10.4l33.4 142.6L421 80.1c.5-2.2 2.7-11.4 12.7-10.4h19.7c.9-.1 6.2-.8 5.3 8.6-.4 1.9 3.4-10.7-52.8 169.9-1.2 5.5-4.8 11.1-12.7 10.4h-18.7c-10.9 1.2-12.5-9.7-12.7-10.8L328.7 110.7l-32.8 137c-.2 1.1-1.7 11.9-12.7 10.8h-18.3zm273.5 5.6c-5.9 0-33.9-.3-57.4-12.3a12.8 12.8 0 0 1 -7.8-11.9v-10.8c0-8.5 6.2-6.9 8.8-5.9 10 4.1 16.5 7.1 28.8 9.6 36.7 7.5 52.8-2.3 56.7-4.5 13.2-7.8 14.2-25.7 5.3-35-10.5-8.8-15.5-9.1-53.1-21-4.6-1.3-43.7-13.6-43.8-52.4-.6-28.2 25.1-56.2 69.5-56 12.7 0 46.4 4.1 55.6 15.6 1.4 2.1 2 4.6 1.9 7v10.1c0 4.4-1.6 6.7-4.9 6.7-7.7-.9-21.4-11.2-49.2-10.8-6.9-.4-39.9 .9-38.4 25-.4 19 26.6 26.1 29.7 26.9 36.5 11 48.7 12.8 63.1 29.6 17.1 22.3 7.9 48.3 4.4 55.4-19.1 37.5-68.4 34.4-69.3 34.4zm40.2 104.9c-70 51.7-171.7 79.3-258.5 79.3A469.1 469.1 0 0 1 2.8 327.5c-6.5-5.9-.8-14 7.2-9.5a637.4 637.4 0 0 0 316.9 84.1 630.2 630.2 0 0 0 241.6-49.6c11.8-5 21.8 7.8 10.1 16.4zm29.2-33.3c-9-11.5-59.3-5.4-81.8-2.7-6.8 .8-7.9-5.1-1.8-9.5 40.1-28.2 105.9-20.1 113.4-10.6 7.6 9.5-2.1 75.4-39.6 106.9-5.8 4.9-11.3 2.3-8.7-4.1 8.4-21.3 27.4-68.5 18.4-80z" />
-              </svg>
+    </div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/">
+          <img class="header__logo" src="img/logo2.svg" />
+        </a>
+        <div class="right-side">
+          <a class="right-side__link" href="https://github.com/ArkadiusN"><i class="fa github-icon">&#xf09b;</i></a>
+          <div class="side-navbar" id="sideNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="link__about-me" href="#about">About</a>
+            <a class="link__project" href="#projects">Projects</a>
+            <a>
+              <label class="side-switch">
+                <input class="side-switch__checkbox" type="checkbox" />
+                <span class="side-switch__slider"></span>
+              </label>
             </a>
-            <a class="link-tree__link" href=""><svg class="tree-icon" role="img" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <title>Overleaf</title>
-                <path
-                  d="M22.3515.7484C19.1109-.5101 7.365-.982 7.3452 6.0266c-3.4272 2.194-5.6967 5.768-5.6967 9.598a8.373 8.373 0 0 0 13.1225 6.898 8.373 8.373 0 0 0-1.7668-14.7194c-.6062-.2339-1.9234-.6481-2.9753-.559-1.5007.9544-3.3308 2.9155-4.1949 4.8693 2.5894-3.082 7.5046-2.425 9.1937 1.2287 1.6892 3.6538-.9944 7.8237-5.0198 7.7998a5.4995 5.4995 0 0 1-4.1949-1.9328c-1.485-1.7483-1.8678-3.6444-1.5615-5.4975 1.057-6.4947 8.759-10.1894 14.486-11.6094-1.8677.989-5.2373 2.6134-7.5948 4.3837C18.015 9.1382 19.1308 3.345 22.3515.7484z">
-                </path>
-              </svg></a>
           </div>
-          <a class="indicator" href="#about">
-            <p class="indicator__arrow">&#8595;</p>
+          <div class="hamburger" onclick="hideOrShowNav()">
+            <div class="button" id="btt" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <div class="line-navbar">
+            <a>
+              <label class="switch">
+                <input class="switch__checkbox" type="checkbox" />
+                <span class="switch__slider"></span>
+              </label>
+            </a>
+            <div class="line-navbar-one">
+              <a class="line__link line__link-one" href="#about">About Me</a>
+            </div>
+            <div class="line-navbar-two">
+              <a class="line__link line__link-two" href="#projects">Projects</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section section--top">
+      <div class="flexbox-outer">
+        <div class="flexbox-inner">
+          <div class="container-one">
+            <p class="container-one__hello" id="welcome-message"></p>
+          </div>
+          <div class="container-two">
+            <p class="container-two__triangle"></p>
+          </div>
+          <div class="container-three">
+            <h1 class="container-three__text">
+              Mr<span class="container-three__dot">.</span><span class="container-three__fullname">Arkadiusz</span>
+              Nowacki
+            </h1>
+          </div>
+          <div class="container-four">
+            <h3 class="container-four__about">
+              Java Dev
+              <span class="container-four__ampersand">&</span>
+              Web passionate
+            </h3>
+          </div>
+          <div class="container-five">
+            <button class="container-five__btn btn-one">
+              <a class="none1" href="files/CV Arkadiusz Nowacki.docx">Download CV</a>
+            </button>
+            <button class="container-five__btn btn-two">
+              <a class="none2" href="#projects">My Work</a>
+            </button>
+          </div>
+        </div>
+        <div class="link-tree">
+          <a class="link-tree__link" href="https://github.com/ArkadiusN"><i class="fa tree-icon">&#xf09b;</i></a>
+          <a class="link-tree__link"
+            href="https://www.credly.com/badges/66e11de9-ae65-409d-948a-3ba23d37966e/public_url"><svg
+              xmlns="http://www.w3.org/2000/svg" class="tree-icon" height="16" width="20" viewBox="0 0 640 512">
+              <path
+                d="M180.4 203c-.7 22.7 10.6 32.7 10.9 39.1a8.2 8.2 0 0 1 -4.1 6.3l-12.8 9a10.7 10.7 0 0 1 -5.6 1.9c-.4 0-8.2 1.8-20.5-25.6a78.6 78.6 0 0 1 -62.6 29.5c-16.3 .9-60.4-9.2-58.1-56.2-1.6-38.3 34.1-62.1 70.9-60.1 7.1 0 21.6 .4 47 6.3v-15.6c2.7-26.5-14.7-47-44.8-43.9-2.4 0-19.4-.5-45.8 10.1-7.4 3.4-8.3 2.8-10.8 2.8-7.4 0-4.4-21.5-2.9-24.2 5.2-6.4 35.9-18.4 65.9-18.2a76.9 76.9 0 0 1 55.7 17.3 70.3 70.3 0 0 1 17.7 52.4l0 69.3zM94 235.4c32.4-.5 46.2-20 49.3-30.5 2.5-10.1 2.1-16.4 2.1-27.4-9.7-2.3-23.6-4.9-39.6-4.9-15.2-1.1-42.8 5.6-41.7 32.3-1.2 16.8 11.1 31.4 30 30.5zm170.9 23.1c-7.9 .7-11.5-4.9-12.7-10.4l-49.8-164.7c-1-2.8-1.6-5.7-1.9-8.6a4.6 4.6 0 0 1 3.9-5.3c.2 0-2.1 0 22.3 0 8.8-.9 11.6 6 12.6 10.4l35.7 140.8 33.2-140.8c.5-3.2 2.9-11.1 12.8-10.2h17.2c2.2-.2 11.1-.5 12.7 10.4l33.4 142.6L421 80.1c.5-2.2 2.7-11.4 12.7-10.4h19.7c.9-.1 6.2-.8 5.3 8.6-.4 1.9 3.4-10.7-52.8 169.9-1.2 5.5-4.8 11.1-12.7 10.4h-18.7c-10.9 1.2-12.5-9.7-12.7-10.8L328.7 110.7l-32.8 137c-.2 1.1-1.7 11.9-12.7 10.8h-18.3zm273.5 5.6c-5.9 0-33.9-.3-57.4-12.3a12.8 12.8 0 0 1 -7.8-11.9v-10.8c0-8.5 6.2-6.9 8.8-5.9 10 4.1 16.5 7.1 28.8 9.6 36.7 7.5 52.8-2.3 56.7-4.5 13.2-7.8 14.2-25.7 5.3-35-10.5-8.8-15.5-9.1-53.1-21-4.6-1.3-43.7-13.6-43.8-52.4-.6-28.2 25.1-56.2 69.5-56 12.7 0 46.4 4.1 55.6 15.6 1.4 2.1 2 4.6 1.9 7v10.1c0 4.4-1.6 6.7-4.9 6.7-7.7-.9-21.4-11.2-49.2-10.8-6.9-.4-39.9 .9-38.4 25-.4 19 26.6 26.1 29.7 26.9 36.5 11 48.7 12.8 63.1 29.6 17.1 22.3 7.9 48.3 4.4 55.4-19.1 37.5-68.4 34.4-69.3 34.4zm40.2 104.9c-70 51.7-171.7 79.3-258.5 79.3A469.1 469.1 0 0 1 2.8 327.5c-6.5-5.9-.8-14 7.2-9.5a637.4 637.4 0 0 0 316.9 84.1 630.2 630.2 0 0 0 241.6-49.6c11.8-5 21.8 7.8 10.1 16.4zm29.2-33.3c-9-11.5-59.3-5.4-81.8-2.7-6.8 .8-7.9-5.1-1.8-9.5 40.1-28.2 105.9-20.1 113.4-10.6 7.6 9.5-2.1 75.4-39.6 106.9-5.8 4.9-11.3 2.3-8.7-4.1 8.4-21.3 27.4-68.5 18.4-80z" />
+            </svg>
           </a>
+          <a class="link-tree__link" href=""><svg class="tree-icon" role="img" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>Overleaf</title>
+              <path
+                d="M22.3515.7484C19.1109-.5101 7.365-.982 7.3452 6.0266c-3.4272 2.194-5.6967 5.768-5.6967 9.598a8.373 8.373 0 0 0 13.1225 6.898 8.373 8.373 0 0 0-1.7668-14.7194c-.6062-.2339-1.9234-.6481-2.9753-.559-1.5007.9544-3.3308 2.9155-4.1949 4.8693 2.5894-3.082 7.5046-2.425 9.1937 1.2287 1.6892 3.6538-.9944 7.8237-5.0198 7.7998a5.4995 5.4995 0 0 1-4.1949-1.9328c-1.485-1.7483-1.8678-3.6444-1.5615-5.4975 1.057-6.4947 8.759-10.1894 14.486-11.6094-1.8677.989-5.2373 2.6134-7.5948 4.3837C18.015 9.1382 19.1308 3.345 22.3515.7484z">
+              </path>
+            </svg></a>
         </div>
-      </section>
-
-      <section class="section section--mid" id="about">
-        <div class="flexbox-mid-outer">
-          <div class="about">
-            <div class="about-wrapper">
-              <div class="flex-container-one">
-                <div class="flex-container-one__corner corner-one"></div>
-                <div class="flex-container-one__corner corner-two"></div>
-              </div>
-              <h1 class="about__header">About me</h1>
-              <hr class="about__underline" />
-              <p class="about__details">
-                Hello, my name is Arkadiusz Nowacki. I am a final-year master's student
-                pursuing a degree in <span class="degree">Software
-                  Engineering with a focus on Cloud Computing</span>👨‍💻. My area of interest lies in developing Java
-                standalone applications and their interaction
-                within the modern cloud. I am also an avid web development hobbyist. Currently based in <span
-                  class="city">London&#x1F306;</span>, I am eager to utilize the knowledge
-                and skills I have acquired through my academic journey and previous work experiences to propel my
-                professional development even <span class="book">further</span>&#x1F4D8;.
-                My immediate goal is to secure a position that will enable me to sharpen my problem-solving abilities and
-                expand my expertise in cloud &#x2601;
-                applications.
-              </p>
-              <div class="flex-container-two">
-                <div class="flex-container-two__corner corner-three"></div>
-                <div class="flex-container-two__corner corner-four"></div>
-              </div>
-            </div>
-          </div>
-          <div class="timeline">
-            <div class="outer">
-              <div class="card">
-                <div class="info">
-                  <h3 class="title">City, University of London 2022 - 2023</h3>
-                  <p class="timeline__text">I am currently in my final year at City, London University pursuing <span
-                      class="city">MSc. Software Engineering with Cloud Computing</span>.
-                    I have developed valuable problem-solving skills, effective communication, and interpersonal skills as
-                    part of my course and varying work experience to date.
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="info">
-                  <h3 class="title">Goldsmiths, University of London 2019 - 2022</h3>
-                  <p class="timeline__text">I actively participated in the three-year <span class="city">BSc. Computer
-                      Science</span> program, culminating in the attainment
-                    of First Class Honours. Throughout the program, I immersed myself in a variety of modules that
-                    afforded me the
-                    opportunity to undertake programming projects using languages such as Java and Python, as well as work
-                    with databases
-                    including NoSQL and MySQL.
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="info">
-                  <h3 class="title">Royal Greenwich Trust School 2017 - 2019</h3>
-                  <p class="timeline__text">During my 6th form further education, I actively engaged in the <span
-                      class="city">BTEC Level 3 National Diploma in Information Technology</span>,
-                    achieving Distinction Distinction over a comprehensive two-year program. I immersed myself in diverse
-                    technology
-                    subjects, including the development of information management systems using Microsoft software,
-                    progressing to data
-                    modeling and programming using Python.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flexbox-quote flexbox-quote--one">
-          <div class="flexbox-quote-container">
-            <h6 class="flexbox-quote__text text__one">Insights</h6>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--bot" id="projects">
-        <h2 class="project-title">Projects</h2>
-        <div class="card-grid">
-          <div class="grid-item-1">
-            <div class="project-container">
-              <img class="project__image image__one" src="img/projectOneImg.PNG" alt="Platform game image" />
-            </div>
-            <p class="item__description">
-              Popular series themed platform game created with a use of <span class="p5">p5.js</span> library
-              with a scope to deliver enjoying gameplay and challenges.
-            </p>
-            <div class="item__button">
-              <a class="button-link" href="https://github.com/ArkadiusN/Platform-Game">View here</a>
-            </div>
-            <div class="item__language">
-              <img class="language" src="img/js.png" />
-            </div>
-          </div>
-
-          <div class="grid-item-2">
-            <div class="project-container">
-              <img class="project__image image__two" src="img/projectTwoImg.PNG" alt="Drawing app image" />
-            </div>
-            <p class="item__description">
-              Browser-based paint tool named <span class="app-title">N&B drawing</span>, which allows
-              a user to create their art with numerous amount of choices like gradient brush, spirograph tool and more.
-            </p>
-            <div class="item__button">
-              <a class="button-link" href="https://github.com/ArkadiusN/Painting-app">View here</a>
-            </div>
-            <div class="item__language">
-              <img class="language" src="img/js.png" />
-            </div>
-          </div>
-
-          <div class="grid-item-3">
-            <div class="project-container">
-              <img class="project__image image__three" src="img/toDoApp.PNG" alt="Remainder todo app image" />
-            </div>
-            <p class="item__description">
-              Scheduling tool with quick access for chronological track of current responsibilities
-              as well as their status of importance and due time.
-            </p>
-            <div class="item__button">
-              <a class="button-link" href="https://github.com/ArkadiusN/ToDo-App">View here</a>
-            </div>
-            <div class="item__language">
-              <img class="language language-two" src="img/java.png" />
-            </div>
-          </div>
-
-          <div class="grid-item-4">
-            <div class="project-container">
-              <img class="project__image image__four" src="img/flightBookingSystem.PNG"
-                alt="Low-level booking system image" />
-            </div>
-            <p class="item__description">
-              Simulator of a booking system that considers all aspects
-              necessary for successful plane journey. An algorithm that allocates
-              passenger seats and checks aircraft weight.
-            </p>
-            <div class="item__button">
-              <a class="button-link" href="https://github.com/ArkadiusN/Flight-booking-system">View here</a>
-            </div>
-            <div class="item__language">
-              <img class="language language-two" src="img/java.png" />
-            </div>
-          </div>
-          <div class="grid-item-4">
-            <div class="project-container">
-              <img class="project__image image__four" src="img/flightBookingSystem.PNG" alt="Low-level booking system image" />
-            </div>
-            <p class="item__description">
-              Simulator of a booking system that considers all aspects
-              necessary for successful plane journey. An algorithm that allocates
-              passenger seats and checks aircraft weight.
-            </p>
-            <div class="item__button">
-              <a class="button-link" href="https://github.com/ArkadiusN/Flight-booking-system">View here</a>
-            </div>
-            <div class="item__language">
-              <img class="language language-two" src="img/java.png" />
-            </div>
-          </div>
-          <div class="grid-item-4">
-            <div class="project-container">
-              <img class="project__image image__four" src="img/flightBookingSystem.PNG" alt="Low-level booking system image" />
-            </div>
-            <p class="item__description">
-              Simulator of a booking system that considers all aspects
-              necessary for successful plane journey. An algorithm that allocates
-              passenger seats and checks aircraft weight.
-            </p>
-            <div class="item__button">
-              <a class="button-link" href="https://github.com/ArkadiusN/Flight-booking-system">View here</a>
-            </div>
-            <div class="item__language">
-              <img class="language language-two" src="img/java.png" />
-            </div>
-          </div>
-
-          <div class="grid-item-5">
-            <div class="project-container">
-              <img class="project__image image__five" src="img/RSA.PNG" alt="Low-level booking system image" />
-            </div>
-            <p class="item__description">
-              RSA algorithm is one of the most secure algorithms along SHA-256 used to secure data transmissions
-              such as card payments and private massages.
-            </p>
-            <div class="item__button">
-              <a class="button-link" href="https://github.com/ArkadiusN/RSA-algorithm">View here</a>
-            </div>
-            <div class="item__language">
-              <img class="language language-two" src="img/java.png" />
-            </div>
-          </div>
-        </div>
-        
-
-
-        <div class="flexbox-quote flexbox-quote--two">
-          <div class="flexbox-quote-container">
-            <h6 class="flexbox-quote__text text__two">Work</h6>
-          </div>
-        </div>
-      </section>
-
-      <div class="footer">
-        <p class="footer__text" id="footer-text"></p>
-        <a class="footer__link" href="https://github.com/ArkadiusN"><i class="fa footer-icon">&#xf09b;</i>My GitHub</a>
+        <a class="indicator" href="#about">
+          <p class="indicator__arrow">&#8595;</p>
+        </a>
       </div>
-      <button class="scroll-top">
-        <i class="material-icons">arrow_upward</i>
-      </button>
-    </main>
-    <script src="js/dark-mode.js"></script>
-  </body>
+    </section>
+
+    <section class="section section--mid" id="about">
+      <div class="flexbox-mid-outer">
+        <div class="about">
+          <div class="about-wrapper">
+            <div class="flex-container-one">
+              <div class="flex-container-one__corner corner-one"></div>
+              <div class="flex-container-one__corner corner-two"></div>
+            </div>
+            <h1 class="about__header">About me</h1>
+            <hr class="about__underline" />
+            <p class="about__details">
+              Hello, my name is Arkadiusz Nowacki. I am a final-year master's student
+              pursuing a degree in <span class="degree">Software
+                Engineering with a focus on Cloud Computing</span>👨‍💻. My area of interest lies in developing Java
+              standalone applications and their interaction
+              within the modern cloud. I am also an avid web development hobbyist. Currently based in <span
+                class="city">London&#x1F306;</span>, I am eager to utilize the knowledge
+              and skills I have acquired through my academic journey and previous work experiences to propel my
+              professional development even <span class="book">further</span>&#x1F4D8;.
+              My immediate goal is to secure a position that will enable me to sharpen my problem-solving abilities and
+              expand my expertise in cloud &#x2601;
+              applications.
+            </p>
+            <div class="flex-container-two">
+              <div class="flex-container-two__corner corner-three"></div>
+              <div class="flex-container-two__corner corner-four"></div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="outer">
+            <div class="card">
+              <div class="info">
+                <h3 class="title">City, University of London 2022 - 2023</h3>
+                <p class="timeline__text">I am currently in my final year at City, London University pursuing <span
+                    class="city">MSc. Software Engineering with Cloud Computing</span>.
+                  I have developed valuable problem-solving skills, effective communication, and interpersonal skills as
+                  part of my course and varying work experience to date.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">Goldsmiths, University of London 2019 - 2022</h3>
+                <p class="timeline__text">I actively participated in the three-year <span class="city">BSc. Computer
+                    Science</span> program, culminating in the attainment
+                  of First Class Honours. Throughout the program, I immersed myself in a variety of modules that
+                  afforded me the
+                  opportunity to undertake programming projects using languages such as Java and Python, as well as work
+                  with databases
+                  including NoSQL and MySQL.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">Royal Greenwich Trust School 2017 - 2019</h3>
+                <p class="timeline__text">During my 6th form further education, I actively engaged in the <span
+                    class="city">BTEC Level 3 National Diploma in Information Technology</span>,
+                  achieving Distinction Distinction over a comprehensive two-year program. I immersed myself in diverse
+                  technology
+                  subjects, including the development of information management systems using Microsoft software,
+                  progressing to data
+                  modeling and programming using Python.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flexbox-quote flexbox-quote--one">
+        <div class="flexbox-quote-container">
+          <h6 class="flexbox-quote__text text__one">Insights</h6>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--bot" id="projects">
+      <h2 class="project-title">Projects</h2>
+      <div class="card-grid">
+
+        <div class="grid-item-6">
+          <div class="project-container">
+            <img class="project__image image__six" src="img/SchoolTracker.PNG" alt="Low-level booking system image" />
+          </div>
+          <p class="item__description">
+            The Student Tracker app is an engaging web-based application designed to store, display, and effortlessly
+            update student
+            records.
+          </p>
+          <div class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/SchoolTracker">View here</a>
+          </div>
+          <div class="item__language">
+            <img class="language language-two" src="img/java.png" />
+          </div>
+        </div>
+
+        <div class="grid-item-7">
+          <div class="project-container">
+            <img class="project__image image__seven" src="img/DDS.PNG" alt="Low-level booking system image" />
+          </div>
+          <p class="item__description">
+            Report on the findings & generated DDS performance metrics with decomposition and graphical visualization
+            via experimental campaign.
+          </p>
+          <div class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/Experimental-Performance-Evaluation-of-DDS">View here</a>
+          </div>
+          <div class="item__language">
+            <img class="language language-two" src="img/java.png" />
+          </div>
+        </div>
+
+        <div class="grid-item-3">
+          <div class="project-container">
+            <img class="project__image image__three" src="img/toDoApp.PNG" alt="Remainder todo app image" />
+          </div>
+          <p class="item__description">
+            Scheduling tool with quick access for chronological track of current responsibilities
+            as well as their status of importance and due time.
+          </p>
+          <div class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/ToDo-App">View here</a>
+          </div>
+          <div class="item__language">
+            <img class="language language-two" src="img/java.png" />
+          </div>
+        </div>
+
+        <div class="grid-item-4">
+          <div class="project-container">
+            <img class="project__image image__four" src="img/flightBookingSystem.PNG"
+              alt="Low-level booking system image" />
+          </div>
+          <p class="item__description">
+            Simulator of a booking system that considers all aspects
+            necessary for successful plane journey. An algorithm that allocates
+            passenger seats and checks aircraft weight.
+          </p>
+          <div class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/Flight-booking-system">View here</a>
+          </div>
+          <div class="item__language">
+            <img class="language language-two" src="img/java.png" />
+          </div>
+        </div>
+
+        <div class="grid-item-5">
+          <div class="project-container">
+            <img class="project__image image__five" src="img/RSA.PNG" alt="Low-level booking system image" />
+          </div>
+          <p class="item__description">
+            RSA algorithm is one of the most secure algorithms along SHA-256 used to secure data transmissions
+            such as card payments and private massages.
+          </p>
+          <div class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/RSA-algorithm">View here</a>
+          </div>
+          <div class="item__language">
+            <img class="language language-two" src="img/java.png" />
+          </div>
+        </div>
+
+        <div class="grid-item-1">
+          <div class="project-container">
+            <img class="project__image image__one" src="img/projectOneImg.PNG" alt="Platform game image" />
+          </div>
+          <p class="item__description">
+            Popular series themed platform game created with a use of <span class="p5">p5.js</span> library
+            with a scope to deliver enjoying gameplay and challenges.
+          </p>
+          <div class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/Platform-Game">View here</a>
+          </div>
+          <div class="item__language">
+            <img class="language" src="img/js.png" />
+          </div>
+        </div>
+
+        <div class="grid-item-2">
+          <div class="project-container">
+            <img class="project__image image__two" src="img/projectTwoImg.PNG" alt="Drawing app image" />
+          </div>
+          <p class="item__description">
+            Browser-based paint tool named <span class="app-title">N&B drawing</span>, which allows
+            a user to create their art with numerous amount of choices like gradient brush, spirograph tool and more.
+          </p>
+          <div class="item__button">
+            <a class="button-link" href="https://github.com/ArkadiusN/Painting-app">View here</a>
+          </div>
+          <div class="item__language">
+            <img class="language" src="img/js.png" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flexbox-quote flexbox-quote--two">
+        <div class="flexbox-quote-container">
+          <h6 class="flexbox-quote__text text__two">Work</h6>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p class="footer__text" id="footer-text"></p>
+      <a class="footer__link" href="https://github.com/ArkadiusN"><i class="fa footer-icon">&#xf09b;</i>My GitHub</a>
+    </div>
+    <button class="scroll-top">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+  </main>
+  <script src="js/dark-mode.js"></script>
+</body>
+
 </html>
