@@ -102,6 +102,22 @@ main {
   display: none;
 }
 
+.fa-moon-o {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  color: #f1c40f;
+  font-size: 21px !important;
+}
+
+.fa-sun-o {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  color: #f39c12;
+  font-size: 21px !important; 
+}
+
 .right-side {
   display: flex;
   flex-direction: row;
@@ -214,7 +230,8 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ff4f00;
+  background-color: var(--black);
+  border: 2px solid #ff4f00;
   transition: ease-in 0.6s;
   border-radius: 20px;
 }
@@ -224,11 +241,12 @@ main {
   content: "";
   height: 30px;
   width: 30px;
-  top: 5px;
-  left: 5px;
-  background-color: var(--black);
+  top: 3px;
+  left: 3px;
+  background-color: var(--white);
   transition: ease-in 0.6s;
   border-radius: 20px;
+  z-index: 1;
 }
 
 .side-switch input:checked + .side-switch__slider:before {
@@ -236,7 +254,7 @@ main {
 }
 
 .switch input:checked + .switch__slider:before {
-  transform: translateX(30px);
+  transform: translateX(29px);
 }
 
 .hamburger {
@@ -921,7 +939,7 @@ hr {
 }
 
 .flexbox-quote--two {
-  background-image: url(/img/contact-background.png);
+  background-image: url(/img/projects-background.png);
   transition: background-image 500ms linear;
 }
 
