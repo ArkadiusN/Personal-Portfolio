@@ -5,7 +5,6 @@ var button2 = document.querySelector(".btn-two");
 var toggle2 = document.querySelector(".switch");
 var checkbox2 = document.querySelector(".switch__checkbox");
 
-// var aTags = document.querySelectorAll(".none");
 var aTag1 = document.querySelector(".none1");
 var aTag2 = document.querySelector(".none2");
 

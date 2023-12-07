@@ -365,10 +365,14 @@ main {
   left: 50%;
   transform: translateX(-50%);
   font-size: 42px !important;
-  transition: color 0.4s ease-out;
   width: 36px;
   height: 42px;
   fill: var(--white);
+  transition: color 0.4s ease-out;
+}
+
+.tree-icon__svg{
+    transition: fill 0.4s ease-out;
 }
 
 .link-tree a:hover {
@@ -611,6 +615,7 @@ hr {
 
 .degree {
   color: var(--orange);
+  transition: 1.5s;
 }
 
 .book {
@@ -618,7 +623,8 @@ hr {
 }
 
 .city {
-  color: #dc2f2f;
+  color: var(--orange);
+  transition: 1.5s;
 }
 
 /* Timeline Container */
@@ -1197,15 +1203,15 @@ hr {
   }
 
   .container-one__hello {
-    font-size: calc(13px + 0.5vw);
+    font-size: calc(7px + 0.5vw); /*calc(13px + 0.5vw);*/
   }
 
   .container-three__text {
-    font-size: calc(56px + 1vw);
+    font-size: calc(46px + 1vw); /*calc(56px + 1vw);*/
   }
 
   .container-four__about {
-    font-size: calc(15px + 0.3vw);
+    font-size: calc(12px + 0.3vw); /*calc(15px + 0.3vw);*/
   }
 
   .container-five__btn {
@@ -1214,7 +1220,7 @@ hr {
 
   .container-five__btn,
   .container-five__btn a {
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(7px + 0.3vw); /*calc(12px + 0.3vw);*/
   }
 
   .link-tree {
