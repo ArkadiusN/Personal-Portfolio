@@ -323,7 +323,7 @@ main {
 
 .section--top {
   background-color: #ff4f00;
-  min-height: calc(100vh - 100.5px);
+  min-height: calc(100vh - 10vh);
 }
 
 .flexbox-outer {
@@ -355,8 +355,8 @@ main {
   align-items: center;
   background-color: #e34c26;
   border-bottom: 1px solid black;
-  height: 104px;
-  width: 104px;
+  height: calc(63px + 4.4vh);
+  width: calc(63px + 2vw);
   transition: background-color 350ms linear;
 }
 
@@ -364,9 +364,9 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 42px !important;
-  width: 36px;
-  height: 42px;
+  font-size: 38px !important;
+  width: 32px;
+  height: 38px;
   fill: var(--white);
   transition: color 0.4s ease-out;
 }
@@ -397,7 +397,7 @@ main {
   color: black;
   font-family: var(--ff-sub);
   font-weight: 500;
-  font-size: 14px;
+  font-size: calc(7px + 0.5vw);
   padding: 10px 35px 10px 35px;
   transition: 1.5s;
 }
@@ -421,7 +421,7 @@ main {
   color: var(--white);
   font-family: var(--ff-sub);
   font-weight: var(--fw-b);
-  font-size: 55px;
+  font-size: calc(46px + 1vw);
   padding: 18px 7px 10px 7px;
   transition: var(--tr-darkMode);
   transition: 1.5s;
@@ -444,7 +444,7 @@ main {
 .container-four__about {
   color: var(--white);
   font-family: var(--ff-sub);
-  font-size: 14px;
+  font-size: calc(12px + 0.3vw);
   letter-spacing: 0.1rem;
   padding: 10px;
   transition: var(--tr-darkMode);
@@ -490,7 +490,7 @@ main {
   color: var(--white);
   font-family: var(--ff-sub);
   font-weight: 500;
-  font-size: 13px;
+  font-size: calc(9px + 0.3vw);
   letter-spacing: 0.05rem;
   border-radius: 5px;
   width: 200px;
@@ -508,8 +508,8 @@ main {
   bottom: 0;
   border: 2px solid rgb(255, 87, 34);
   border-radius: 50px;
-  width: 40px;
-  height: 65px;
+  width: 36px;
+  height: 58px;
   margin-bottom: 5px;
 }
 
@@ -517,7 +517,7 @@ main {
   padding-top: 10px;
   text-align: center;
   color: rgb(255, 87, 34);
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .darkModeReading {
@@ -1041,7 +1041,7 @@ hr {
     padding-left: 0;
   }
   .container-three__text {
-    font-size: 45px;
+    font-size: calc(45px + 1vw);
   }
 
   .card-grid {
