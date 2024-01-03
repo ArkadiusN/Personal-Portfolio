@@ -818,7 +818,7 @@ hr {
 .card-grid {
   display: grid;
   grid-gap: 48px;
-  grid-template-columns: repeat(auto-fit, minmax(0px, 18rem));
+  grid-template-columns: repeat(auto-fit, minmax(0px, 16rem));
   justify-content: center;
   align-self: center;
   padding-bottom: 30px;
@@ -829,7 +829,6 @@ hr {
   justify-content: center;
   background-color: var(--charcoal);
   box-shadow: var(--b-sh);
-  height: 480px;
 }
 
 .project-container {
@@ -851,8 +850,7 @@ hr {
   font-family: var(--ff-sub);
   font-size: 13px;
   line-height: 1.3rem;
-  letter-spacing: 0.030rem;
-  padding: 0 2.5rem 0 2.5rem;
+  padding: 0 1.5rem 0 1.5rem;
   text-align: center;
   transition: var(--tr-darkMode);
   transition: 1.5s;
@@ -864,10 +862,11 @@ hr {
 
 .item__button {
   position: relative;
-  height: 50px;
+  height: 36px;
 }
 
 .item__button a {
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1288,7 +1287,6 @@ hr {
 
   .item__description {
     font-size: 12px;
-    padding: 0 3.5rem 0 3.5rem;
   }
 
   .scroll-top {
