@@ -613,6 +613,10 @@ hr {
   transition: 1.5s;
 }
 
+.fullname {
+  color: #ff4f00;
+}
+
 .degree {
   color: var(--orange);
   transition: 1.5s;
@@ -1306,7 +1310,7 @@ hr {
   }
 
   .about__details {
-    padding: 0 2rem 3.375rem 2rem;
+    padding: 0 2.5rem 3.375rem 2.5rem;
   }
 }
 
