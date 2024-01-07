@@ -718,10 +718,35 @@ hr {
   padding: 10px;
 }
 
+.date{
+  color: white;
+}
+
 .timeline__text{
   font-size: 13px;
   line-height: 1.3rem;
   transition: 1.5s;
+}
+
+.timeline__text1,
+.timeline__text3{
+  text-align: left;
+}
+
+.timeline__text2{
+  text-align: right;
+}
+
+.java{
+  color: #ff9811;
+}
+
+.python {
+  color: #f8c63d;
+}
+
+.aws{
+  color: #ffdf00;
 }
 
 /* Title of the card */
